@@ -1,0 +1,218 @@
+{
+  "why_choose_section": {
+    "section_name": "WhyChooseSection",
+    "file_path": "components/WhyChooseSection.tsx",
+    "description": "Feature highlights section showcasing key benefits of AI mock interview platform",
+    
+    "section_layout": {
+      "container": {
+        "element": "section",
+        "classes": "w-full bg-gray-50 py-20 lg:py-28",
+        "id": "why-choose-section"
+      },
+      "inner_wrapper": {
+        "element": "div",
+        "classes": "max-w-7xl mx-auto px-6 lg:px-8"
+      }
+    },
+
+    "section_header": {
+      "container_classes": "text-center mb-16 lg:mb-20",
+      
+      "main_heading": {
+        "element": "h2",
+        "text": "Why Choose Final Round AI for Mock Interviews?",
+        "alternative_text": "Why Practice with Our AI Interview Coach?",
+        "classes": "text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight",
+        "style": {
+          "fontFamily": "Inter, Georgia, serif",
+          "letterSpacing": "-0.01em"
+        }
+      },
+
+      "subheading": {
+        "element": "p",
+        "text": "Intelligent Interview Preparation That Delivers Real Results",
+        "alternative_texts": [
+          "Smarter Interview Prep That Actually Works",
+          "Advanced AI Technology Meets Practical Interview Training",
+          "Experience the Future of Interview Preparation"
+        ],
+        "classes": "text-lg md:text-xl text-gray-600 max-w-2xl mx-auto",
+        "style": {
+          "lineHeight": "1.6"
+        }
+      }
+    },
+
+    "features_grid": {
+      "container_classes": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10",
+      
+      "feature_card_base_classes": "bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300",
+
+      "features": [
+        {
+          "id": "feature-1",
+          "title": "Build Real Confidence",
+          "alternative_titles": [
+            "Develop Unshakeable Confidence",
+            "Master Interview Composure"
+          ],
+          "description": "Practice with AI that asks challenging questions and provides constructive feedback, helping you stay composed and articulate under pressure—just like in actual interviews.",
+          "alternative_descriptions": [
+            "Train with our intelligent AI interviewer that simulates high-pressure scenarios and delivers personalized feedback, ensuring you walk into every interview feeling prepared and self-assured.",
+            "Experience realistic interview conditions with our AI coach that adapts to your responses, helping you refine your communication skills and build the confidence to excel in any interview setting."
+          ],
+          "image_mock": {
+            "container_classes": "w-full h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center",
+            "placeholder_content": {
+              "type": "icon",
+              "icon": "Shield from lucide-react or confidence icon",
+              "size": "64px",
+              "color": "#4A90E2"
+            },
+            "text_overlay": "Interview Confidence",
+            "text_classes": "text-blue-600 font-semibold mt-4"
+          },
+          "actual_image": {
+            "src": "/images/features/build-confidence.jpg",
+            "alt": "Professional practicing mock interview with AI feedback on laptop",
+            "width": 400,
+            "height": 300,
+            "object_fit": "cover"
+          }
+        },
+        {
+          "id": "feature-2",
+          "title": "Save Valuable Time",
+          "alternative_titles": [
+            "Practice On Your Schedule",
+            "Interview Prep Without the Wait"
+          ],
+          "description": "No scheduling hassles or waiting for coaches—practice instantly whenever you want, at your own pace, from anywhere in the world.",
+          "alternative_descriptions": [
+            "Eliminate coordination headaches and access unlimited practice sessions 24/7. Our AI interviewer is always available, allowing you to train efficiently on your timeline.",
+            "Skip the back-and-forth scheduling and start practicing immediately. Get on-demand interview training that fits seamlessly into your busy schedule, wherever you are."
+          ],
+          "image_mock": {
+            "container_classes": "w-full h-64 bg-gradient-to-br from-green-100 to-emerald-200 flex items-center justify-center",
+            "placeholder_content": {
+              "type": "icon",
+              "icon": "Clock or Calendar from lucide-react",
+              "size": "64px",
+              "color": "#10B981"
+            },
+            "text_overlay": "Time Flexibility",
+            "text_classes": "text-green-600 font-semibold mt-4"
+          },
+          "actual_image": {
+            "src": "/images/features/save-time.jpg",
+            "alt": "Person using laptop for flexible interview practice by the beach",
+            "width": 400,
+            "height": 300,
+            "object_fit": "cover"
+          }
+        },
+        {
+          "id": "feature-3",
+          "title": "Get Job-Ready Fast",
+          "alternative_titles": [
+            "Accelerate Your Interview Success",
+            "Industry-Specific Preparation"
+          ],
+          "description": "Receive customized questions tailored to your specific role and industry, ensuring you're thoroughly prepared for any scenario you might encounter.",
+          "alternative_descriptions": [
+            "Access role-specific interview questions and scenarios designed for your target position. Our AI analyzes your industry and career level to deliver the most relevant practice experience.",
+            "Train with precision-targeted questions that mirror real interviews in your field. Our intelligent system adapts to your industry, seniority level, and job function for maximum relevance."
+          ],
+          "image_mock": {
+            "container_classes": "w-full h-64 bg-gradient-to-br from-purple-100 to-pink-200 flex items-center justify-center",
+            "placeholder_content": {
+              "type": "icon",
+              "icon": "Target or Briefcase from lucide-react",
+              "size": "64px",
+              "color": "#A78BFA"
+            },
+            "text_overlay": "Role-Specific Training",
+            "text_classes": "text-purple-600 font-semibold mt-4"
+          },
+          "actual_image": {
+            "src": "/images/features/job-ready.jpg",
+            "alt": "Professional reviewing customized interview notes and preparation materials",
+            "width": 400,
+            "height": 300,
+            "object_fit": "cover"
+          }
+        }
+      ]
+    },
+
+    "feature_card_structure": {
+      "image_container": {
+        "element": "div",
+        "classes": "w-full h-64 overflow-hidden relative",
+        "description": "Container for feature image with hover effect"
+      },
+      "content_container": {
+        "element": "div",
+        "classes": "p-6 lg:p-8"
+      },
+      "title": {
+        "element": "h3",
+        "classes": "text-xl lg:text-2xl font-bold text-gray-900 mb-3"
+      },
+      "description": {
+        "element": "p",
+        "classes": "text-base text-gray-600 leading-relaxed"
+      }
+    },
+
+    "responsive_behavior": {
+      "mobile": {
+        "max_width": "640px",
+        "grid": "1 column",
+        "card_spacing": "gap-6",
+        "image_height": "h-56"
+      },
+      "tablet": {
+        "max_width": "768px",
+        "grid": "2 columns",
+        "card_spacing": "gap-8"
+      },
+      "desktop": {
+        "min_width": "1024px",
+        "grid": "3 columns",
+        "card_spacing": "gap-10"
+      }
+    }
+  },
+
+  "implementation_details": {
+    "component_type": "Functional React component with TypeScript",
+    "imports": [
+      "import Image from 'next/image'",
+      "import { Shield, Clock, Target, Briefcase, Calendar } from 'lucide-react'"
+    ],
+    "props_interface": {
+      "features": "array of feature objects (optional - use default if not provided)",
+      "title": "string (optional override)",
+      "subtitle": "string (optional override)"
+    },
+    "state_management": "No state needed - static content display",
+    "styling": "Tailwind CSS with custom hover effects"
+  },
+
+  "accessibility_features": {
+    "semantic_html": "Use article tags for each feature card",
+    "heading_hierarchy": "h2 for section title, h3 for feature titles",
+    "image_alt_text": "Descriptive alt text for all feature images",
+    "keyboard_navigation": "Cards should be keyboard accessible if interactive",
+    "aria_labels": "Add aria-label to decorative elements"
+  },
+
+  "performance_optimization": {
+    "image_loading": "Lazy load feature images (not above fold)",
+    "image_optimization": "Use Next.js Image component with proper sizing",
+    "layout_shift_prevention": "Specify image dimensions to prevent CLS"
+  }
+}

@@ -1,0 +1,540 @@
+{
+  "component_type": "practice_section_with_interview_cards",
+  "layout": {
+    "container": {
+      "width": "100%",
+      "background": "linear-gradient(135deg, #E8E4F3 0%, #F5F3FF 50%, #E0F7FA 100%)",
+      "padding": {
+        "top": "80px",
+        "bottom": "100px",
+        "left": "5%",
+        "right": "5%"
+      },
+      "alignment": "center"
+    }
+  },
+  "content": {
+    "header": {
+      "main_headline": {
+        "text_parts": [
+          {
+            "text": "Practice with ",
+            "font_family": "serif, Georgia, 'Times New Roman'",
+            "font_size": "56px",
+            "font_weight": "400",
+            "color": "#2D2D2D",
+            "display": "inline"
+          },
+          {
+            "text": "AI Mock Interviews",
+            "font_family": "serif, Georgia, 'Times New Roman'",
+            "font_size": "56px",
+            "font_weight": "600",
+            "color": "#2D2D2D",
+            "background": "linear-gradient(135deg, #FFB6D9 0%, #FFA07A 50%, #FFD700 100%)",
+            "padding": {
+              "top": "8px",
+              "bottom": "8px",
+              "left": "20px",
+              "right": "20px"
+            },
+            "border_radius": "12px",
+            "display": "inline-block",
+            "margin_left": "8px"
+          }
+        ],
+        "container_style": {
+          "text_align": "center",
+          "line_height": "1.3",
+          "margin_bottom": "32px",
+          "max_width": "1200px",
+          "margin_horizontal": "auto"
+        },
+        "responsive": {
+          "tablet": {
+            "font_size": "42px"
+          },
+          "mobile": {
+            "font_size": "32px",
+            "display": "block"
+          }
+        }
+      },
+      "description": {
+        "text": "Practice interviews anytime with an AI interviewer that delivers realistic questions and instant feedback. It adapts to your job description and experience level to help you refine your responses and build confidence. AI Mock Interview operates 24/7 without scheduling or preparation time.",
+        "font_family": "sans-serif, Arial, Helvetica",
+        "font_size": "18px",
+        "font_weight": "400",
+        "color": "#5A5A5A",
+        "text_align": "center",
+        "line_height": "1.7",
+        "margin_bottom": "32px",
+        "max_width": "900px",
+        "margin_horizontal": "auto"
+      },
+      "cta_button": {
+        "text": "Start Your Free Practice Now",
+        "background_color": "#FF5722",
+        "color": "#FFFFFF",
+        "font_family": "sans-serif, Arial, Helvetica",
+        "font_size": "18px",
+        "font_weight": "600",
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "36px",
+          "right": "36px"
+        },
+        "border_radius": "8px",
+        "border": "none",
+        "margin_bottom": "32px",
+        "box_shadow": "0 4px 12px rgba(255, 87, 34, 0.3)",
+        "cursor": "pointer",
+        "hover_effect": {
+          "background_color": "#E64A19",
+          "transform": "translateY(-2px)",
+          "box_shadow": "0 6px 16px rgba(255, 87, 34, 0.4)",
+          "transition": "all 0.3s ease"
+        }
+      },
+      "feature_pills": {
+        "container": {
+          "display": "flex",
+          "justify_content": "center",
+          "gap": "16px",
+          "margin_bottom": "60px",
+          "flex_wrap": "wrap"
+        },
+        "pills": [
+          {
+            "text": "REALISTIC PRACTICE",
+            "background_color": "transparent",
+            "color": "#2D2D2D",
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "14px",
+            "font_weight": "700",
+            "letter_spacing": "1px",
+            "padding": {
+              "top": "8px",
+              "bottom": "8px",
+              "left": "16px",
+              "right": "16px"
+            },
+            "border": "2px solid #2D2D2D",
+            "border_radius": "24px"
+          },
+          {
+            "text": "ACTIONABLE FEEDBACK",
+            "background_color": "transparent",
+            "color": "#2D2D2D",
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "14px",
+            "font_weight": "700",
+            "letter_spacing": "1px",
+            "padding": {
+              "top": "8px",
+              "bottom": "8px",
+              "left": "16px",
+              "right": "16px"
+            },
+            "border": "2px solid #2D2D2D",
+            "border_radius": "24px"
+          },
+          {
+            "text": "MAXIMUM IMPACT",
+            "background_color": "transparent",
+            "color": "#2D2D2D",
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "14px",
+            "font_weight": "700",
+            "letter_spacing": "1px",
+            "padding": {
+              "top": "8px",
+              "bottom": "8px",
+              "left": "16px",
+              "right": "16px"
+            },
+            "border": "2px solid #2D2D2D",
+            "border_radius": "24px"
+          }
+        ]
+      }
+    },
+    "interview_cards_section": {
+      "container": {
+        "display": "grid",
+        "grid_template_columns": "repeat(4, 1fr)",
+        "gap": "24px",
+        "max_width": "1400px",
+        "margin": "0 auto",
+        "responsive": {
+          "large_tablet": {
+            "grid_template_columns": "repeat(2, 1fr)",
+            "gap": "20px"
+          },
+          "mobile": {
+            "grid_template_columns": "1fr",
+            "gap": "16px"
+          }
+        }
+      },
+      "cards": [
+        {
+          "role_title": "AI Engineer",
+          "description": "Prepare for your Microsoft AI Engineer interview with practice questions to boost confidence.",
+          "company_name": "Microsoft",
+          "card_background": "linear-gradient(135deg, #FFD7A8 0%, #FFA94D 100%)",
+          "card_style": {
+            "border_radius": "16px",
+            "padding": {
+              "top": "28px",
+              "bottom": "28px",
+              "left": "24px",
+              "right": "24px"
+            },
+            "box_shadow": "0 4px 12px rgba(0, 0, 0, 0.08)",
+            "transition": "transform 0.3s ease, box-shadow 0.3s ease",
+            "hover_effect": {
+              "transform": "translateY(-8px)",
+              "box_shadow": "0 8px 24px rgba(0, 0, 0, 0.12)"
+            }
+          },
+          "role_title_style": {
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "22px",
+            "font_weight": "700",
+            "color": "#2D2D2D",
+            "margin_bottom": "12px"
+          },
+          "description_style": {
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "15px",
+            "font_weight": "400",
+            "color": "#3D3D3D",
+            "line_height": "1.6",
+            "margin_bottom": "20px",
+            "min_height": "70px"
+          },
+          "cta_link": {
+            "text": "Start Interview",
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "16px",
+            "font_weight": "600",
+            "color": "#2D2D2D",
+            "text_decoration": "underline",
+            "margin_bottom": "24px",
+            "display": "block",
+            "cursor": "pointer",
+            "hover_effect": {
+              "color": "#000000"
+            }
+          },
+          "company_logo_container": {
+            "background_color": "#FFFFFF",
+            "border_radius": "12px",
+            "padding": {
+              "top": "20px",
+              "bottom": "20px",
+              "left": "20px",
+              "right": "20px"
+            },
+            "display": "flex",
+            "align_items": "center",
+            "justify_content": "center",
+            "min_height": "80px",
+            "box_shadow": "0 2px 8px rgba(0, 0, 0, 0.05)"
+          },
+          "company_logo": {
+            "alt_text": "Microsoft logo",
+            "max_width": "100%",
+            "height": "auto",
+            "object_fit": "contain"
+          }
+        },
+        {
+          "role_title": "Platform Engineer",
+          "description": "Prepare for your Netflix Platform Engineer interview with practice questions to boost confidence.",
+          "company_name": "Netflix",
+          "card_background": "linear-gradient(135deg, #FFB6E5 0%, #FF6EC7 100%)",
+          "card_style": {
+            "border_radius": "16px",
+            "padding": {
+              "top": "28px",
+              "bottom": "28px",
+              "left": "24px",
+              "right": "24px"
+            },
+            "box_shadow": "0 4px 12px rgba(0, 0, 0, 0.08)",
+            "transition": "transform 0.3s ease, box-shadow 0.3s ease",
+            "hover_effect": {
+              "transform": "translateY(-8px)",
+              "box_shadow": "0 8px 24px rgba(0, 0, 0, 0.12)"
+            }
+          },
+          "role_title_style": {
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "22px",
+            "font_weight": "700",
+            "color": "#2D2D2D",
+            "margin_bottom": "12px"
+          },
+          "description_style": {
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "15px",
+            "font_weight": "400",
+            "color": "#3D3D3D",
+            "line_height": "1.6",
+            "margin_bottom": "20px",
+            "min_height": "70px"
+          },
+          "cta_link": {
+            "text": "Start Interview",
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "16px",
+            "font_weight": "600",
+            "color": "#2D2D2D",
+            "text_decoration": "underline",
+            "margin_bottom": "24px",
+            "display": "block",
+            "cursor": "pointer",
+            "hover_effect": {
+              "color": "#000000"
+            }
+          },
+          "company_logo_container": {
+            "background_color": "#FFFFFF",
+            "border_radius": "12px",
+            "padding": {
+              "top": "20px",
+              "bottom": "20px",
+              "left": "20px",
+              "right": "20px"
+            },
+            "display": "flex",
+            "align_items": "center",
+            "justify_content": "center",
+            "min_height": "80px",
+            "box_shadow": "0 2px 8px rgba(0, 0, 0, 0.05)"
+          },
+          "company_logo": {
+            "alt_text": "Netflix logo",
+            "max_width": "100%",
+            "height": "auto",
+            "object_fit": "contain"
+          }
+        },
+        {
+          "role_title": "Research Engineer",
+          "description": "Prepare for your OpenAI Research Engineer interview with practice questions to boost confidence.",
+          "company_name": "OpenAI",
+          "card_background": "linear-gradient(135deg, #B8C7E0 0%, #8BA3C7 100%)",
+          "card_style": {
+            "border_radius": "16px",
+            "padding": {
+              "top": "28px",
+              "bottom": "28px",
+              "left": "24px",
+              "right": "24px"
+            },
+            "box_shadow": "0 4px 12px rgba(0, 0, 0, 0.08)",
+            "transition": "transform 0.3s ease, box-shadow 0.3s ease",
+            "hover_effect": {
+              "transform": "translateY(-8px)",
+              "box_shadow": "0 8px 24px rgba(0, 0, 0, 0.12)"
+            }
+          },
+          "role_title_style": {
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "22px",
+            "font_weight": "700",
+            "color": "#2D2D2D",
+            "margin_bottom": "12px"
+          },
+          "description_style": {
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "15px",
+            "font_weight": "400",
+            "color": "#3D3D3D",
+            "line_height": "1.6",
+            "margin_bottom": "20px",
+            "min_height": "70px"
+          },
+          "cta_link": {
+            "text": "Start Interview",
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "16px",
+            "font_weight": "600",
+            "color": "#2D2D2D",
+            "text_decoration": "underline",
+            "margin_bottom": "24px",
+            "display": "block",
+            "cursor": "pointer",
+            "hover_effect": {
+              "color": "#000000"
+            }
+          },
+          "company_logo_container": {
+            "background_color": "#FFFFFF",
+            "border_radius": "12px",
+            "padding": {
+              "top": "20px",
+              "bottom": "20px",
+              "left": "20px",
+              "right": "20px"
+            },
+            "display": "flex",
+            "align_items": "center",
+            "justify_content": "center",
+            "min_height": "80px",
+            "box_shadow": "0 2px 8px rgba(0, 0, 0, 0.05)"
+          },
+          "company_logo": {
+            "alt_text": "OpenAI logo",
+            "max_width": "100%",
+            "height": "auto",
+            "object_fit": "contain"
+          }
+        },
+        {
+          "role_title": "AI Engineer",
+          "description": "Prepare for your McKinsey AI Engineer interview with practice questions to boost confidence.",
+          "company_name": "McKinsey & Company",
+          "card_background": "linear-gradient(135deg, #B8E6F6 0%, #7DD3F0 100%)",
+          "card_style": {
+            "border_radius": "16px",
+            "padding": {
+              "top": "28px",
+              "bottom": "28px",
+              "left": "24px",
+              "right": "24px"
+            },
+            "box_shadow": "0 4px 12px rgba(0, 0, 0, 0.08)",
+            "transition": "transform 0.3s ease, box-shadow 0.3s ease",
+            "hover_effect": {
+              "transform": "translateY(-8px)",
+              "box_shadow": "0 8px 24px rgba(0, 0, 0, 0.12)"
+            }
+          },
+          "role_title_style": {
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "22px",
+            "font_weight": "700",
+            "color": "#2D2D2D",
+            "margin_bottom": "12px"
+          },
+          "description_style": {
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "15px",
+            "font_weight": "400",
+            "color": "#3D3D3D",
+            "line_height": "1.6",
+            "margin_bottom": "20px",
+            "min_height": "70px"
+          },
+          "cta_link": {
+            "text": "Start Interview",
+            "font_family": "sans-serif, Arial, Helvetica",
+            "font_size": "16px",
+            "font_weight": "600",
+            "color": "#2D2D2D",
+            "text_decoration": "underline",
+            "margin_bottom": "24px",
+            "display": "block",
+            "cursor": "pointer",
+            "hover_effect": {
+              "color": "#000000"
+            }
+          },
+          "company_logo_container": {
+            "background_color": "#FFFFFF",
+            "border_radius": "12px",
+            "padding": {
+              "top": "20px",
+              "bottom": "20px",
+              "left": "20px",
+              "right": "20px"
+            },
+            "display": "flex",
+            "align_items": "center",
+            "justify_content": "center",
+            "min_height": "80px",
+            "box_shadow": "0 2px 8px rgba(0, 0, 0, 0.05)"
+          },
+          "company_logo": {
+            "alt_text": "McKinsey & Company logo",
+            "max_width": "100%",
+            "height": "auto",
+            "object_fit": "contain"
+          }
+        }
+      ]
+    }
+  },
+  "design_specifications": {
+    "color_palette": {
+      "background_gradient": "linear-gradient(135deg, #E8E4F3 0%, #F5F3FF 50%, #E0F7FA 100%)",
+      "headline_highlight": "linear-gradient(135deg, #FFB6D9 0%, #FFA07A 50%, #FFD700 100%)",
+      "cta_button": "#FF5722",
+      "card_colors": {
+        "orange": "linear-gradient(135deg, #FFD7A8 0%, #FFA94D 100%)",
+        "pink": "linear-gradient(135deg, #FFB6E5 0%, #FF6EC7 100%)",
+        "blue": "linear-gradient(135deg, #B8C7E0 0%, #8BA3C7 100%)",
+        "cyan": "linear-gradient(135deg, #B8E6F6 0%, #7DD3F0 100%)"
+      },
+      "text_primary": "#2D2D2D",
+      "text_secondary": "#5A5A5A",
+      "white": "#FFFFFF"
+    },
+    "typography": {
+      "heading_font": "Serif (Georgia or similar)",
+      "body_font": "Sans-serif (Arial, Helvetica, or similar)",
+      "font_weights": {
+        "regular": "400",
+        "semibold": "600",
+        "bold": "700"
+      }
+    },
+    "spacing_system": {
+      "section_padding": "80px 5% 100px",
+      "card_gap": "24px",
+      "internal_card_padding": "28px 24px",
+      "element_margins": "12px-32px"
+    },
+    "effects": {
+      "card_shadows": "0 4px 12px rgba(0, 0, 0, 0.08)",
+      "hover_shadows": "0 8px 24px rgba(0, 0, 0, 0.12)",
+      "button_shadow": "0 4px 12px rgba(255, 87, 34, 0.3)",
+      "transitions": "all 0.3s ease",
+      "border_radius": {
+        "cards": "16px",
+        "logo_container": "12px",
+        "button": "8px",
+        "pills": "24px"
+      }
+    }
+  },
+  "implementation_notes": {
+    "framework_suggestions": ["React", "Next.js", "Vue.js", "Tailwind CSS"],
+    "company_logos": {
+      "note": "Use actual company logos or SVG versions",
+      "sources": ["Company websites", "Logo repositories", "SVG icon libraries"],
+      "fallback": "Use company name text if logos unavailable"
+    },
+    "accessibility": {
+      "contrast_ratio": "WCAG AA compliant for all text",
+      "interactive_elements": "Include hover, focus, and active states",
+      "alt_text": "Provide descriptive alt text for all logos",
+      "semantic_html": "Use proper heading hierarchy and semantic tags"
+    },
+    "responsive_breakpoints": {
+      "desktop": "1200px+",
+      "large_tablet": "768px-1199px (2 columns)",
+      "mobile": "320px-767px (1 column)"
+    },
+    "animation_recommendations": {
+      "card_hover": "Lift effect with enhanced shadow",
+      "button_hover": "Slight elevation with color darkening",
+      "page_load": "Subtle fade-in for cards with staggered delay"
+    }
+  }
+}

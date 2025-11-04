@@ -1,0 +1,532 @@
+{
+  "component_type": "website_header_navigation",
+  "component_purpose": "Primary navigation header for AI Mock Interview platform",
+  "positioning": {
+    "type": "scrollable_header",
+    "behavior": "Scrolls with page content (not sticky/fixed)",
+    "position": "relative",
+    "z_index": "100",
+    "width": "100%",
+    "placement": "Top of webpage, first element in body"
+  },
+  "container": {
+    "element": "header",
+    "semantic_html": "Use <header> tag for accessibility",
+    "max_width": "100%",
+    "width": "100vw",
+    "height": "72px",
+    "background": {
+      "color": "#FFFFFF",
+      "type": "solid"
+    },
+    "border_bottom": {
+      "width": "1px",
+      "style": "solid",
+      "color": "#E5E7EB"
+    },
+    "box_shadow": {
+      "horizontal": "0",
+      "vertical": "1px",
+      "blur": "3px",
+      "spread": "0",
+      "color": "rgba(0, 0, 0, 0.05)",
+      "description": "Subtle shadow for depth separation from content"
+    },
+    "padding": {
+      "top": "0",
+      "bottom": "0",
+      "left": "32px",
+      "right": "32px",
+      "note": "Horizontal padding creates breathing room from viewport edges"
+    },
+    "display": "flex",
+    "justify_content": "space-between",
+    "align_items": "center"
+  },
+  "left_section_navigation_tabs": {
+    "container": {
+      "display": "flex",
+      "align_items": "center",
+      "gap": "0",
+      "height": "100%",
+      "flex": "0 0 auto"
+    },
+    "navigation_items": [
+      {
+        "tab_1": {
+          "label": "Dashboard",
+          "element": "button or anchor tag",
+          "type": "navigation_tab",
+          "state": "active",
+          "styling": {
+            "font_family": "sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial",
+            "font_size": "16px",
+            "font_weight": "500",
+            "color": "#6366F1",
+            "color_description": "Indigo/purple for active state",
+            "background": "transparent",
+            "padding": {
+              "top": "0",
+              "bottom": "0",
+              "left": "16px",
+              "right": "16px"
+            },
+            "height": "72px",
+            "line_height": "72px",
+            "border": "none",
+            "border_bottom": {
+              "width": "2px",
+              "style": "solid",
+              "color": "#6366F1",
+              "description": "Active indicator underline"
+            },
+            "cursor": "pointer",
+            "transition": "all 0.2s ease"
+          },
+          "hover_state": {
+            "color": "#4F46E5",
+            "background": "#F5F3FF",
+            "background_description": "Very light purple tint on hover"
+          },
+          "active_state": {
+            "color": "#6366F1",
+            "border_bottom": "2px solid #6366F1"
+          }
+        }
+      },
+      {
+        "tab_2": {
+          "label": "Practice",
+          "state": "inactive",
+          "styling": {
+            "font_family": "sans-serif",
+            "font_size": "16px",
+            "font_weight": "500",
+            "color": "#6B7280",
+            "color_description": "Medium gray for inactive state",
+            "background": "transparent",
+            "padding": {
+              "top": "0",
+              "bottom": "0",
+              "left": "16px",
+              "right": "16px"
+            },
+            "height": "72px",
+            "line_height": "72px",
+            "border": "none",
+            "border_bottom": "none",
+            "cursor": "pointer",
+            "transition": "all 0.2s ease"
+          },
+          "hover_state": {
+            "color": "#374151",
+            "background": "#F9FAFB",
+            "border_bottom": "2px solid #D1D5DB"
+          }
+        }
+      },
+      {
+        "tab_3": {
+          "label": "Analytics",
+          "state": "inactive",
+          "styling": {
+            "font_family": "sans-serif",
+            "font_size": "16px",
+            "font_weight": "500",
+            "color": "#6B7280",
+            "background": "transparent",
+            "padding": {
+              "top": "0",
+              "bottom": "0",
+              "left": "16px",
+              "right": "16px"
+            },
+            "height": "72px",
+            "line_height": "72px",
+            "border": "none",
+            "cursor": "pointer",
+            "transition": "all 0.2s ease"
+          },
+          "hover_state": {
+            "color": "#374151",
+            "background": "#F9FAFB",
+            "border_bottom": "2px solid #D1D5DB"
+          }
+        }
+      },
+      {
+        "tab_4": {
+          "label": "Resources",
+          "state": "inactive",
+          "styling": {
+            "font_family": "sans-serif",
+            "font_size": "16px",
+            "font_weight": "500",
+            "color": "#6B7280",
+            "background": "transparent",
+            "padding": {
+              "top": "0",
+              "bottom": "0",
+              "left": "16px",
+              "right": "16px"
+            },
+            "height": "72px",
+            "line_height": "72px",
+            "border": "none",
+            "cursor": "pointer",
+            "transition": "all 0.2s ease"
+          },
+          "hover_state": {
+            "color": "#374151",
+            "background": "#F9FAFB",
+            "border_bottom": "2px solid #D1D5DB"
+          }
+        }
+      }
+    ],
+    "spacing": {
+      "gap_between_tabs": "0px",
+      "note": "Tabs are directly adjacent with padding creating spacing"
+    }
+  },
+  "center_section_search_bar": {
+    "container": {
+      "display": "flex",
+      "align_items": "center",
+      "flex": "1 1 auto",
+      "max_width": "500px",
+      "margin": {
+        "left": "40px",
+        "right": "40px"
+      }
+    },
+    "search_input": {
+      "element": "input",
+      "type": "text",
+      "placeholder": "Search interviews...",
+      "styling": {
+        "width": "100%",
+        "height": "44px",
+        "font_family": "sans-serif",
+        "font_size": "15px",
+        "font_weight": "400",
+        "color": "#1F2937",
+        "placeholder_color": "#9CA3AF",
+        "background": "#FFFFFF",
+        "border": {
+          "width": "2px",
+          "style": "solid",
+          "color": "#E5E7EB",
+          "note": "Light gray border by default"
+        },
+        "border_radius": "24px",
+        "border_radius_description": "Fully rounded pill shape",
+        "padding": {
+          "top": "10px",
+          "bottom": "10px",
+          "left": "44px",
+          "right": "16px",
+          "note": "Extra left padding for search icon"
+        },
+        "outline": "none",
+        "transition": "all 0.3s ease"
+      },
+      "search_icon": {
+        "type": "SVG icon (magnifying glass)",
+        "position": "absolute",
+        "left": "16px",
+        "top": "50%",
+        "transform": "translateY(-50%)",
+        "size": "20px",
+        "color": "#9CA3AF",
+        "stroke_width": "2px"
+      },
+      "focus_state": {
+        "border_color": "#C084FC",
+        "border_color_description": "Purple/pink gradient effect",
+        "border_width": "2px",
+        "box_shadow": "0 0 0 3px rgba(192, 132, 252, 0.1)",
+        "outline": "none"
+      },
+      "hover_state": {
+        "border_color": "#D1D5DB"
+      }
+    },
+    "wrapper_position": "relative",
+    "wrapper_display": "inline-block",
+    "wrapper_width": "100%"
+  },
+  "right_section_actions": {
+    "container": {
+      "display": "flex",
+      "align_items": "center",
+      "gap": "12px",
+      "flex": "0 0 auto"
+    },
+    "buttons": [
+      {
+        "upgrade_pro_button": {
+          "label": "Upgrade Pro",
+          "element": "button",
+          "type": "secondary_cta",
+          "styling": {
+            "font_family": "sans-serif",
+            "font_size": "15px",
+            "font_weight": "600",
+            "color": "#7C3AED",
+            "color_description": "Purple text color",
+            "background": "linear-gradient(135deg, #FAF5FF 0%, #F3E8FF 100%)",
+            "background_description": "Very light purple gradient background",
+            "border": {
+              "width": "2px",
+              "style": "solid",
+              "color": "#C084FC",
+              "description": "Light purple border"
+            },
+            "border_radius": "10px",
+            "padding": {
+              "top": "10px",
+              "bottom": "10px",
+              "left": "20px",
+              "right": "20px"
+            },
+            "height": "44px",
+            "min_width": "130px",
+            "cursor": "pointer",
+            "transition": "all 0.3s ease",
+            "white_space": "nowrap"
+          },
+          "hover_state": {
+            "background": "linear-gradient(135deg, #F3E8FF 0%, #E9D5FF 100%)",
+            "border_color": "#A855F7",
+            "transform": "translateY(-1px)",
+            "box_shadow": "0 4px 12px rgba(124, 58, 237, 0.15)"
+          },
+          "active_state": {
+            "transform": "translateY(0)",
+            "box_shadow": "0 2px 6px rgba(124, 58, 237, 0.1)"
+          }
+        }
+      },
+      {
+        "new_interview_button": {
+          "label": "+ New Interview",
+          "element": "button",
+          "type": "primary_cta",
+          "icon": {
+            "symbol": "+",
+            "position": "left of text",
+            "spacing": "6px gap from text"
+          },
+          "styling": {
+            "font_family": "sans-serif",
+            "font_size": "15px",
+            "font_weight": "600",
+            "color": "#1F2937",
+            "color_description": "Dark gray/black text",
+            "background": "#FFFFFF",
+            "border": {
+              "width": "2px",
+              "style": "solid",
+              "color": "#1F2937",
+              "description": "Dark border matching text"
+            },
+            "border_radius": "10px",
+            "padding": {
+              "top": "10px",
+              "bottom": "10px",
+              "left": "18px",
+              "right": "18px"
+            },
+            "height": "44px",
+            "min_width": "150px",
+            "cursor": "pointer",
+            "transition": "all 0.3s ease",
+            "white_space": "nowrap",
+            "display": "flex",
+            "align_items": "center",
+            "justify_content": "center",
+            "gap": "6px"
+          },
+          "hover_state": {
+            "background": "#1F2937",
+            "color": "#FFFFFF",
+            "border_color": "#1F2937",
+            "transform": "translateY(-1px)",
+            "box_shadow": "0 4px 12px rgba(0, 0, 0, 0.15)"
+          },
+          "active_state": {
+            "transform": "translateY(0)",
+            "box_shadow": "0 2px 6px rgba(0, 0, 0, 0.1)"
+          }
+        }
+      },
+      {
+        "user_avatar_button": {
+          "element": "button",
+          "type": "user_profile_avatar",
+          "styling": {
+            "width": "44px",
+            "height": "44px",
+            "border_radius": "50%",
+            "border_radius_description": "Perfect circle",
+            "background": "linear-gradient(135deg, #14B8A6 0%, #3B82F6 50%, #8B5CF6 100%)",
+            "background_description": "Teal to blue to purple gradient",
+            "border": {
+              "width": "2px",
+              "style": "solid",
+              "color": "#FFFFFF"
+            },
+            "display": "flex",
+            "align_items": "center",
+            "justify_content": "center",
+            "cursor": "pointer",
+            "transition": "all 0.3s ease",
+            "overflow": "hidden"
+          },
+          "content": {
+            "type": "initials",
+            "text": "JD",
+            "font_family": "sans-serif",
+            "font_size": "15px",
+            "font_weight": "700",
+            "color": "#FFFFFF",
+            "text_align": "center"
+          },
+          "dropdown_indicator": {
+            "icon": "chevron-down arrow",
+            "position": "Not visible in main avatar, separate element",
+            "note": "Dropdown arrow shown separately if needed"
+          },
+          "hover_state": {
+            "transform": "scale(1.05)",
+            "box_shadow": "0 4px 12px rgba(0, 0, 0, 0.15)"
+          },
+          "note": "Can be replaced with actual profile image if available"
+        }
+      },
+      {
+        "dropdown_arrow": {
+          "element": "button",
+          "type": "dropdown_trigger",
+          "position": "immediately after avatar",
+          "visibility": "optional",
+          "styling": {
+            "width": "24px",
+            "height": "24px",
+            "background": "transparent",
+            "border": "none",
+            "cursor": "pointer",
+            "padding": "0",
+            "display": "none",
+            "note": "If dropdown shown in image, include chevron-down icon"
+          }
+        }
+      }
+    ],
+    "spacing": {
+      "gap_between_elements": "12px",
+      "note": "Consistent 12px gap between Upgrade Pro, New Interview, and Avatar"
+    }
+  },
+  "responsive_behavior": {
+    "desktop": {
+      "breakpoint": "1024px and above",
+      "layout": "All elements visible as described"
+    },
+    "tablet": {
+      "breakpoint": "768px to 1023px",
+      "adjustments": {
+        "search_bar_max_width": "350px",
+        "navigation_tabs_font_size": "15px",
+        "button_padding_reduction": "Reduce horizontal padding by 20%"
+      }
+    },
+    "mobile": {
+      "breakpoint": "Below 768px",
+      "adjustments": {
+        "layout": "Consider hamburger menu for navigation",
+        "search_bar": "Collapse to search icon only",
+        "upgrade_button": "Show icon or hide",
+        "priority": "Show only essential elements: logo, search icon, new interview, avatar"
+      }
+    }
+  },
+  "accessibility": {
+    "semantic_html": "Use <header>, <nav>, <button> tags appropriately",
+    "aria_labels": {
+      "search_input": "aria-label='Search interviews'",
+      "navigation_tabs": "aria-current='page' for active tab",
+      "buttons": "aria-label descriptive text for each button",
+      "user_avatar": "aria-label='User profile menu'"
+    },
+    "keyboard_navigation": {
+      "tab_order": "Left to right: tabs → search → upgrade → new interview → avatar",
+      "focus_visible": "Add visible focus outline for keyboard users",
+      "focus_outline": "2px solid #6366F1 with 2px offset"
+    },
+    "screen_reader": "Ensure all interactive elements have descriptive labels"
+  },
+  "interaction_states": {
+    "note": "Frontend only - no actual navigation/redirects",
+    "tab_click": {
+      "behavior": "Change active state visually only",
+      "visual_feedback": "Apply active styles (underline, color change)",
+      "no_navigation": "Do not redirect or change URL"
+    },
+    "button_click": {
+      "behavior": "Visual feedback only (hover, active states)",
+      "no_action": "No backend integration, no actual functionality"
+    },
+    "search_input": {
+      "behavior": "Allow typing, no search functionality",
+      "placeholder_interaction": "Disappears on focus"
+    }
+  },
+  "scrolling_behavior": {
+    "type": "scrollable_with_page",
+    "position": "relative (not fixed or sticky)",
+    "description": "Header scrolls away when user scrolls down the page",
+    "implementation": "Do not use position: fixed or position: sticky",
+    "z_index": "100 (for stacking context but not fixed positioning)"
+  },
+  "implementation_guidelines": {
+    "html_structure": "header > nav container > left section (tabs) + center section (search) + right section (buttons + avatar)",
+    "css_framework_suggestions": ["Tailwind CSS", "CSS Modules", "Styled Components", "vanilla CSS"],
+    "flexbox_usage": "Primary layout method for alignment and spacing",
+    "grid_alternative": "Can use CSS Grid with three columns: auto 1fr auto",
+    "measurement_units": {
+      "use_pixels_for": "Font sizes, borders, specific dimensions",
+      "use_rem_for": "Scalable spacing and responsive typography",
+      "use_percentages_for": "Width of search bar and flexible elements"
+    }
+  },
+  "color_palette_reference": {
+    "primary_purple": "#6366F1",
+    "light_purple": "#C084FC",
+    "very_light_purple": "#F3E8FF",
+    "dark_text": "#1F2937",
+    "medium_gray": "#6B7280",
+    "light_gray": "#9CA3AF",
+    "border_gray": "#E5E7EB",
+    "white": "#FFFFFF",
+    "gradient_teal": "#14B8A6",
+    "gradient_blue": "#3B82F6",
+    "gradient_purple": "#8B5CF6"
+  },
+  "design_principles": {
+    "consistency": "Maintain 12px gap between right section elements",
+    "alignment": "All elements vertically centered within 72px header height",
+    "visual_hierarchy": "Active tab stands out with color and underline",
+    "whitespace": "Adequate padding prevents cramped appearance",
+    "contrast": "WCAG AA compliant color contrast ratios",
+    "feedback": "All interactive elements have clear hover and active states"
+  },
+  "frontend_only_notes": {
+    "no_routing": "Do not implement React Router, Next.js routing, or URL changes",
+    "no_api_calls": "No fetch requests, no backend integration",
+    "state_management": "Simple useState for active tab tracking if using React",
+    "mock_interactions": "Buttons and tabs only change visual state",
+    "search_functionality": "Input accepts text but performs no search operation"
+  }
+}

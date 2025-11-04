@@ -1,0 +1,108 @@
+{
+  "component": "FAQStaticList",
+  "id": "faq-section-exact",
+  "strict": true,
+  "page": {
+    "backgroundColor": "#FFFFFF"
+  },
+  "container": {
+    "maxWidth": 1100,
+    "center": true,
+    "paddingX": 24,
+    "paddingY": 64
+  },
+  "heading": {
+    "tag": "h2",
+    "text": "Frequently Asked Questions",
+    "align": "center",
+    "color": "#111827",
+    "font": {
+      "family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif",
+      "size": 40,
+      "weight": 700,
+      "letterSpacing": -0.2,
+      "lineHeight": 1.25
+    },
+    "margin": {
+      "top": 0,
+      "bottom": 28
+    }
+  },
+  "list": {
+    "gapY": 24
+  },
+  "cardDefaults": {
+    "backgroundColor": "#FFFFFF",
+    "borderColor": "#E5E7EB",
+    "borderWidth": 1,
+    "borderStyle": "solid",
+    "radius": 12,
+    "shadow": "0 2px 10px rgba(0,0,0,0.05)",
+    "padding": 20,
+    "contentGapY": 10
+  },
+  "questionStyle": {
+    "color": "#111827",
+    "font": {
+      "family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif",
+      "size": 20,
+      "weight": 700,
+      "lineHeight": 1.4
+    }
+  },
+  "answerStyle": {
+    "color": "#4B5563",
+    "font": {
+      "family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif",
+      "size": 16,
+      "weight": 400,
+      "lineHeight": 1.65
+    }
+  },
+  "items": [
+    {
+      "id": "q1",
+      "question": "1. How does the AI Mock Interview work?",
+      "answer": "Our AI Mock Interview creates personalized practice sessions using your saved job roles. You’ll get role-specific questions in an interview-style flow. If you have an upcoming interview scheduled on our platform, you can rehearse with the exact interface and format you’ll see on the day—making your practice even more realistic."
+    },
+    {
+      "id": "q2",
+      "question": "2. Will the AI Mock Interview feel realistic?",
+      "answer": "Absolutely. The AI Mock Interview is built to mirror a real video interview. It uses an asynchronous video experience with timed prompts and a structured sequence, closely matching what you’d face in a live setting for a genuinely authentic practice run."
+    },
+    {
+      "id": "q3",
+      "question": "3. How can I make the most of my practice sessions?",
+      "answer": "Treat each session like the real thing. Turn on video to assess delivery and body language, practice consistently with varied question sets, and review your results over time to spot patterns and areas to improve."
+    },
+    {
+      "id": "q4",
+      "question": "4. Can I use this for free?",
+      "answer": "Yes. The AI Mock Interview is available with our free trial. Create an account to access the core preparation tools and start practicing right away."
+    }
+  ],
+  "a11y": {
+    "regionLabel": "Frequently Asked Questions",
+    "role": "list",
+    "itemRole": "listitem",
+    "headingRole": "heading",
+    "headingLevel": 2
+  },
+  "responsive": {
+    "breakpoints": {
+      "sm": 640,
+      "md": 768,
+      "lg": 1024
+    },
+    "heading": {
+      "sm": { "fontSize": 32, "marginBottom": 24 },
+      "md": { "fontSize": 36, "marginBottom": 26 },
+      "lg": { "fontSize": 40, "marginBottom": 28 }
+    },
+    "cardPadding": {
+      "sm": 16,
+      "md": 18,
+      "lg": 20
+    }
+  }
+}
