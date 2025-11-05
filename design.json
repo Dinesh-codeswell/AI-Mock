@@ -1,532 +1,813 @@
 {
-  "component_type": "website_header_navigation",
-  "component_purpose": "Primary navigation header for AI Mock Interview platform",
-  "positioning": {
-    "type": "scrollable_header",
-    "behavior": "Scrolls with page content (not sticky/fixed)",
-    "position": "relative",
-    "z_index": "100",
-    "width": "100%",
-    "placement": "Top of webpage, first element in body"
+  "page_type": "Onboarding Form with Live Preview Panels",
+  "page_title": "Beyond Career - Personalization Setup",
+  "brand_customization": {
+    "brand_name": "Beyond Career",
+    "logo_source": "Use Beyond Career logo from /public folder in project directory",
+    "logo_implementation_note": "Replace InterviewBee branding with Beyond Career logo and styling throughout"
   },
-  "container": {
-    "element": "header",
-    "semantic_html": "Use <header> tag for accessibility",
-    "max_width": "100%",
-    "width": "100vw",
-    "height": "72px",
-    "background": {
-      "color": "#FFFFFF",
-      "type": "solid"
-    },
-    "border_bottom": {
-      "width": "1px",
-      "style": "solid",
-      "color": "#E5E7EB"
-    },
-    "box_shadow": {
-      "horizontal": "0",
-      "vertical": "1px",
-      "blur": "3px",
-      "spread": "0",
-      "color": "rgba(0, 0, 0, 0.05)",
-      "description": "Subtle shadow for depth separation from content"
-    },
-    "padding": {
-      "top": "0",
-      "bottom": "0",
-      "left": "32px",
-      "right": "32px",
-      "note": "Horizontal padding creates breathing room from viewport edges"
-    },
+  "layout": {
+    "type": "Two-column split layout",
+    "structure": "60% form area (left) / 40% preview area (right)",
+    "background_color": "#FFFFFF (pure white for entire page)",
+    "min_height": "100vh",
+    "overflow": "hidden"
+  },
+  "main_container": {
     "display": "flex",
-    "justify_content": "space-between",
-    "align_items": "center"
+    "flex_direction": "row",
+    "width": "100%",
+    "min_height": "100vh",
+    "padding": "0px",
+    "gap": "0px",
+    "position": "relative"
   },
-  "left_section_navigation_tabs": {
+  "left_section_form_area": {
     "container": {
+      "flex": "1 1 60%",
+      "max_width": "60%",
+      "background_color": "#FFFFFF",
+      "padding": {
+        "top": "60px",
+        "bottom": "80px",
+        "left": "80px",
+        "right": "60px"
+      },
       "display": "flex",
-      "align_items": "center",
-      "gap": "0",
-      "height": "100%",
-      "flex": "0 0 auto"
+      "flex_direction": "column",
+      "overflow_y": "auto",
+      "height": "100vh"
     },
-    "navigation_items": [
-      {
-        "tab_1": {
-          "label": "Dashboard",
-          "element": "button or anchor tag",
-          "type": "navigation_tab",
-          "state": "active",
-          "styling": {
-            "font_family": "sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial",
-            "font_size": "16px",
-            "font_weight": "500",
-            "color": "#6366F1",
-            "color_description": "Indigo/purple for active state",
-            "background": "transparent",
-            "padding": {
-              "top": "0",
-              "bottom": "0",
-              "left": "16px",
-              "right": "16px"
-            },
-            "height": "72px",
-            "line_height": "72px",
-            "border": "none",
-            "border_bottom": {
-              "width": "2px",
-              "style": "solid",
-              "color": "#6366F1",
-              "description": "Active indicator underline"
-            },
-            "cursor": "pointer",
-            "transition": "all 0.2s ease"
-          },
-          "hover_state": {
-            "color": "#4F46E5",
-            "background": "#F5F3FF",
-            "background_description": "Very light purple tint on hover"
-          },
-          "active_state": {
-            "color": "#6366F1",
-            "border_bottom": "2px solid #6366F1"
-          }
-        }
+    "logo_section": {
+      "position": "Top of form area",
+      "margin_bottom": "60px",
+      "implementation": {
+        "element": "img or brand component",
+        "source": "/public/beyond-career-logo.png or /public/logo.svg",
+        "alt_text": "Beyond Career Logo",
+        "height": "40px",
+        "width": "auto",
+        "object_fit": "contain"
       },
-      {
-        "tab_2": {
-          "label": "Practice",
-          "state": "inactive",
-          "styling": {
-            "font_family": "sans-serif",
-            "font_size": "16px",
-            "font_weight": "500",
-            "color": "#6B7280",
-            "color_description": "Medium gray for inactive state",
-            "background": "transparent",
-            "padding": {
-              "top": "0",
-              "bottom": "0",
-              "left": "16px",
-              "right": "16px"
-            },
-            "height": "72px",
-            "line_height": "72px",
-            "border": "none",
-            "border_bottom": "none",
-            "cursor": "pointer",
-            "transition": "all 0.2s ease"
-          },
-          "hover_state": {
-            "color": "#374151",
-            "background": "#F9FAFB",
-            "border_bottom": "2px solid #D1D5DB"
-          }
-        }
-      },
-      {
-        "tab_3": {
-          "label": "Analytics",
-          "state": "inactive",
-          "styling": {
-            "font_family": "sans-serif",
-            "font_size": "16px",
-            "font_weight": "500",
-            "color": "#6B7280",
-            "background": "transparent",
-            "padding": {
-              "top": "0",
-              "bottom": "0",
-              "left": "16px",
-              "right": "16px"
-            },
-            "height": "72px",
-            "line_height": "72px",
-            "border": "none",
-            "cursor": "pointer",
-            "transition": "all 0.2s ease"
-          },
-          "hover_state": {
-            "color": "#374151",
-            "background": "#F9FAFB",
-            "border_bottom": "2px solid #D1D5DB"
-          }
-        }
-      },
-      {
-        "tab_4": {
-          "label": "Resources",
-          "state": "inactive",
-          "styling": {
-            "font_family": "sans-serif",
-            "font_size": "16px",
-            "font_weight": "500",
-            "color": "#6B7280",
-            "background": "transparent",
-            "padding": {
-              "top": "0",
-              "bottom": "0",
-              "left": "16px",
-              "right": "16px"
-            },
-            "height": "72px",
-            "line_height": "72px",
-            "border": "none",
-            "cursor": "pointer",
-            "transition": "all 0.2s ease"
-          },
-          "hover_state": {
-            "color": "#374151",
-            "background": "#F9FAFB",
-            "border_bottom": "2px solid #D1D5DB"
-          }
-        }
-      }
-    ],
-    "spacing": {
-      "gap_between_tabs": "0px",
-      "note": "Tabs are directly adjacent with padding creating spacing"
-    }
-  },
-  "center_section_search_bar": {
-    "container": {
-      "display": "flex",
-      "align_items": "center",
-      "flex": "1 1 auto",
-      "max_width": "500px",
-      "margin": {
-        "left": "40px",
-        "right": "40px"
-      }
+      "styling_note": "Use your Beyond Career logo instead of InterviewBee bee icon and text"
     },
-    "search_input": {
-      "element": "input",
-      "type": "text",
-      "placeholder": "Search interviews...",
-      "styling": {
+    "progress_indicator": {
+      "position": "Below logo, above form",
+      "margin_bottom": "40px",
+      "container": {
+        "display": "flex",
+        "flex_direction": "column",
+        "gap": "12px",
         "width": "100%",
-        "height": "44px",
-        "font_family": "sans-serif",
-        "font_size": "15px",
-        "font_weight": "400",
-        "color": "#1F2937",
-        "placeholder_color": "#9CA3AF",
-        "background": "#FFFFFF",
-        "border": {
-          "width": "2px",
-          "style": "solid",
-          "color": "#E5E7EB",
-          "note": "Light gray border by default"
-        },
-        "border_radius": "24px",
-        "border_radius_description": "Fully rounded pill shape",
-        "padding": {
-          "top": "10px",
-          "bottom": "10px",
-          "left": "44px",
-          "right": "16px",
-          "note": "Extra left padding for search icon"
-        },
-        "outline": "none",
+        "max_width": "800px"
+      },
+      "progress_bars": {
+        "display": "flex",
+        "gap": "8px",
+        "width": "100%"
+      },
+      "bar_1_active": {
+        "width": "50%",
+        "height": "4px",
+        "background_color": "#F59E0B (amber/yellow)",
+        "border_radius": "2px",
         "transition": "all 0.3s ease"
       },
-      "search_icon": {
-        "type": "SVG icon (magnifying glass)",
-        "position": "absolute",
-        "left": "16px",
-        "top": "50%",
-        "transform": "translateY(-50%)",
-        "size": "20px",
-        "color": "#9CA3AF",
-        "stroke_width": "2px"
+      "bar_2_inactive": {
+        "width": "50%",
+        "height": "4px",
+        "background_color": "#E5E7EB (light gray)",
+        "border_radius": "2px",
+        "transition": "all 0.3s ease"
       },
-      "focus_state": {
-        "border_color": "#C084FC",
-        "border_color_description": "Purple/pink gradient effect",
-        "border_width": "2px",
-        "box_shadow": "0 0 0 3px rgba(192, 132, 252, 0.1)",
-        "outline": "none"
-      },
-      "hover_state": {
-        "border_color": "#D1D5DB"
+      "progress_text": {
+        "text": "1 of 2",
+        "font_family": "sans-serif, Inter, -apple-system, system-ui",
+        "font_size": "14px",
+        "font_weight": "500 (medium)",
+        "color": "#6B7280 (gray-500)",
+        "margin_top": "8px"
       }
     },
-    "wrapper_position": "relative",
-    "wrapper_display": "inline-block",
-    "wrapper_width": "100%"
+    "form_header": {
+      "margin_top": "48px",
+      "margin_bottom": "40px",
+      "heading": {
+        "text": "Let's personalize your Beyond Career",
+        "customization_note": "Replace 'InterviewBee' with 'Beyond Career'",
+        "font_family": "sans-serif, Inter, -apple-system, system-ui",
+        "font_size": "36px",
+        "font_weight": "700 (bold)",
+        "color": "#000000 (black)",
+        "line_height": "1.2",
+        "letter_spacing": "-0.02em"
+      }
+    },
+    "form_fields": {
+      "container": {
+        "display": "flex",
+        "flex_direction": "column",
+        "gap": "32px",
+        "max_width": "800px",
+        "width": "100%"
+      },
+      "name_fields_row": {
+        "display": "grid",
+        "grid_template_columns": "1fr 1fr",
+        "gap": "24px",
+        "margin_bottom": "32px",
+        "first_name_field": {
+          "container": {
+            "display": "flex",
+            "flex_direction": "column",
+            "width": "100%"
+          },
+          "label": {
+            "text": "First Name",
+            "required_indicator": true,
+            "font_family": "sans-serif, Inter, -apple-system",
+            "font_size": "15px",
+            "font_weight": "500 (medium)",
+            "color": "#1F2937 (gray-800)",
+            "margin_bottom": "8px",
+            "display": "flex",
+            "align_items": "center",
+            "gap": "4px"
+          },
+          "required_asterisk": {
+            "character": "*",
+            "color": "#EF4444 (red-500)",
+            "font_size": "15px"
+          },
+          "input": {
+            "type": "text",
+            "placeholder": "Enter your first name",
+            "value": "",
+            "width": "100%",
+            "height": "48px",
+            "padding": "12px 16px",
+            "border": "1px solid #D1D5DB (gray-300)",
+            "border_radius": "8px",
+            "font_family": "sans-serif, Inter, -apple-system",
+            "font_size": "15px",
+            "font_weight": "400 (regular)",
+            "color": "#1F2937 (gray-800)",
+            "placeholder_color": "#9CA3AF (gray-400)",
+            "background_color": "#FFFFFF",
+            "transition": "all 0.2s ease",
+            "outline": "none"
+          },
+          "validation_states": {
+            "default": {
+              "border_color": "#D1D5DB"
+            },
+            "focus": {
+              "border_color": "#F59E0B (amber)",
+              "box_shadow": "0 0 0 3px rgba(245, 158, 11, 0.1)"
+            },
+            "error": {
+              "border_color": "#EF4444 (red)",
+              "box_shadow": "0 0 0 3px rgba(239, 68, 68, 0.1)"
+            },
+            "valid": {
+              "border_color": "#10B981 (green)",
+              "box_shadow": "0 0 0 3px rgba(16, 185, 129, 0.1)"
+            }
+          },
+          "error_message": {
+            "text": "First name is required",
+            "display": "block (when error state active)",
+            "font_family": "sans-serif, Inter",
+            "font_size": "13px",
+            "font_weight": "400",
+            "color": "#EF4444 (red-500)",
+            "margin_top": "6px",
+            "line_height": "1.4"
+          }
+        },
+        "last_name_field": {
+          "container": {
+            "display": "flex",
+            "flex_direction": "column",
+            "width": "100%"
+          },
+          "label": {
+            "text": "Last Name",
+            "required_indicator": true,
+            "font_family": "sans-serif, Inter",
+            "font_size": "15px",
+            "font_weight": "500",
+            "color": "#1F2937",
+            "margin_bottom": "8px",
+            "display": "flex",
+            "align_items": "center",
+            "gap": "4px"
+          },
+          "required_asterisk": {
+            "character": "*",
+            "color": "#EF4444",
+            "font_size": "15px"
+          },
+          "input": {
+            "type": "text",
+            "placeholder": "Enter your last name",
+            "value": "",
+            "width": "100%",
+            "height": "48px",
+            "padding": "12px 16px",
+            "border": "1px solid #D1D5DB",
+            "border_radius": "8px",
+            "font_family": "sans-serif, Inter",
+            "font_size": "15px",
+            "font_weight": "400",
+            "color": "#1F2937",
+            "placeholder_color": "#9CA3AF",
+            "background_color": "#FFFFFF",
+            "transition": "all 0.2s ease"
+          },
+          "validation_states": {
+            "default": {
+              "border_color": "#D1D5DB"
+            },
+            "focus": {
+              "border_color": "#F59E0B",
+              "box_shadow": "0 0 0 3px rgba(245, 158, 11, 0.1)"
+            },
+            "error": {
+              "border_color": "#EF4444",
+              "box_shadow": "0 0 0 3px rgba(239, 68, 68, 0.1)"
+            }
+          },
+          "error_message": {
+            "text": "Last name is required",
+            "display": "block (when error)",
+            "font_size": "13px",
+            "color": "#EF4444",
+            "margin_top": "6px"
+          }
+        }
+      },
+      "role_field": {
+        "container": {
+          "display": "flex",
+          "flex_direction": "column",
+          "width": "100%",
+          "margin_bottom": "32px"
+        },
+        "label": {
+          "text": "Your current role (or the role you are applying for)",
+          "required_indicator": true,
+          "font_family": "sans-serif, Inter",
+          "font_size": "15px",
+          "font_weight": "500",
+          "color": "#1F2937",
+          "margin_bottom": "8px",
+          "display": "flex",
+          "align_items": "center",
+          "gap": "4px"
+        },
+        "required_asterisk": {
+          "character": "*",
+          "color": "#EF4444",
+          "font_size": "15px"
+        },
+        "dropdown_container": {
+          "display": "flex",
+          "align_items": "center",
+          "width": "100%",
+          "min_height": "48px",
+          "padding": "8px 16px",
+          "border": "1px solid #D1D5DB",
+          "border_radius": "8px",
+          "background_color": "#FFFFFF",
+          "cursor": "pointer",
+          "transition": "all 0.2s ease",
+          "position": "relative"
+        },
+        "validation_states": {
+          "default": {
+            "border_color": "#D1D5DB"
+          },
+          "focus": {
+            "border_color": "#F59E0B",
+            "box_shadow": "0 0 0 3px rgba(245, 158, 11, 0.1)"
+          },
+          "error": {
+            "border_color": "#EF4444",
+            "box_shadow": "0 0 0 3px rgba(239, 68, 68, 0.1)"
+          }
+        },
+        "placeholder_text": {
+          "text": "You can select up to 3 roles at a time.",
+          "display": "when no selections",
+          "font_family": "sans-serif, Inter",
+          "font_size": "15px",
+          "color": "#9CA3AF (gray-400)",
+          "font_weight": "400"
+        },
+        "dropdown_icon": {
+          "type": "Chevron down (▼)",
+          "position": "absolute",
+          "right": "16px",
+          "top": "50%",
+          "transform": "translateY(-50%)",
+          "size": "20px",
+          "color": "#6B7280 (gray-500)",
+          "transition": "transform 0.2s ease",
+          "rotate_when_open": "180deg"
+        },
+        "error_message": {
+          "text": "Please select at least one role",
+          "display": "block (when error)",
+          "font_size": "13px",
+          "color": "#EF4444",
+          "margin_top": "6px"
+        }
+      },
+      "promo_code_field": {
+        "container": {
+          "display": "flex",
+          "flex_direction": "column",
+          "width": "100%"
+        },
+        "label": {
+          "text": "Got a referral or promo code? (optional)",
+          "font_family": "sans-serif, Inter",
+          "font_size": "15px",
+          "font_weight": "500",
+          "color": "#1F2937",
+          "margin_bottom": "8px",
+          "display": "block"
+        },
+        "input": {
+          "type": "text",
+          "placeholder": "Copy & paste code, e.g. BEEXX",
+          "width": "100%",
+          "height": "48px",
+          "padding": "12px 16px",
+          "border": "1px solid #D1D5DB",
+          "border_radius": "8px",
+          "font_family": "sans-serif, Inter",
+          "font_size": "15px",
+          "font_weight": "400",
+          "color": "#1F2937",
+          "placeholder_color": "#9CA3AF",
+          "background_color": "#FFFFFF",
+          "transition": "all 0.2s ease"
+        },
+        "focus_state": {
+          "border_color": "#F59E0B",
+          "box_shadow": "0 0 0 3px rgba(245, 158, 11, 0.1)"
+        }
+      }
+    },
+    "submit_button": {
+      "position": "Below form fields",
+      "margin_top": "48px",
+      "container": {
+        "display": "flex",
+        "justify_content": "flex-end",
+        "width": "100%",
+        "max_width": "800px"
+      },
+      "button": {
+        "text": "Continue",
+        "display": "inline-flex",
+        "align_items": "center",
+        "justify_content": "center",
+        "gap": "8px",
+        "padding": "14px 32px",
+        "height": "52px",
+        "min_width": "160px",
+        "background_color": "#F59E0B (amber/yellow)",
+        "border": "none",
+        "border_radius": "10px",
+        "font_family": "sans-serif, Inter, -apple-system",
+        "font_size": "16px",
+        "font_weight": "600 (semi-bold)",
+        "color": "#FFFFFF (white)",
+        "cursor": "pointer",
+        "transition": "all 0.2s ease",
+        "box_shadow": "0 2px 8px rgba(245, 158, 11, 0.2)"
+      },
+      "arrow_icon": {
+        "type": "Right arrow (→) or chevron right",
+        "position": "After button text",
+        "size": "18px",
+        "color": "#FFFFFF",
+        "margin_left": "4px"
+      },
+      "hover_state": {
+        "background_color": "#D97706 (darker amber)",
+        "transform": "translateY(-1px)",
+        "box_shadow": "0 4px 12px rgba(245, 158, 11, 0.3)"
+      },
+      "active_state": {
+        "transform": "translateY(0px)",
+        "box_shadow": "0 1px 4px rgba(245, 158, 11, 0.4)"
+      },
+      "disabled_state": {
+        "background_color": "#D1D5DB (gray-300)",
+        "color": "#9CA3AF (gray-400)",
+        "cursor": "not-allowed",
+        "box_shadow": "none",
+        "hover_effect": "none"
+      }
+    }
   },
-  "right_section_actions": {
+  "right_section_preview_area": {
+    "container": {
+      "flex": "1 1 40%",
+      "max_width": "40%",
+      "background_color": "#FEF3C7 (very light amber/cream)",
+      "padding": "40px 32px",
+      "display": "flex",
+      "flex_direction": "column",
+      "gap": "24px",
+      "overflow_y": "auto",
+      "height": "100vh",
+      "position": "sticky",
+      "top": "0"
+    },
+    "preview_card_1_dashboard": {
+      "position": "First preview card in scroll area",
+      "container": {
+        "width": "100%",
+        "background_color": "#FFFFFF",
+        "border": "1px solid #E5E7EB (gray-200)",
+        "border_radius": "16px",
+        "padding": "24px",
+        "box_shadow": "0 4px 16px rgba(0, 0, 0, 0.06)",
+        "margin_bottom": "24px",
+        "transition": "all 0.3s ease"
+      },
+      "header": {
+        "display": "flex",
+        "align_items": "center",
+        "gap": "12px",
+        "margin_bottom": "20px",
+        "icon_group": {
+          "display": "flex",
+          "gap": "8px",
+          "flex_wrap": "wrap",
+          "note": "Replace icons as needed - positioning and spacing defined, not specific icons"
+        },
+        "title": {
+          "text": "Your path to interview success",
+          "font_family": "sans-serif, Inter",
+          "font_size": "16px",
+          "font_weight": "600 (semi-bold)",
+          "color": "#1F2937 (gray-800)",
+          "line_height": "1.4"
+        }
+      },
+      "content_note": "This preview card shows a dashboard interface with upcoming/past interviews, metrics, and help links",
+      "image_placeholder_areas": [
+        {
+          "area_1_top_section": {
+            "purpose": "Onboarding checklist with action button",
+            "position": "Top of card",
+            "height": "auto",
+            "note": "Will contain your custom content"
+          }
+        },
+        {
+          "area_2_interviews_list": {
+            "purpose": "Interview schedule display",
+            "position": "Middle section",
+            "layout": "List format with interview cards",
+            "note": "Replace with your interview data"
+          }
+        },
+        {
+          "area_3_metrics": {
+            "purpose": "Performance statistics",
+            "position": "Lower section",
+            "display": "Flex grid of metric cards",
+            "note": "Customize metrics for Beyond Career"
+          }
+        }
+      ],
+      "label": {
+        "text": "Main Dashboard Interface",
+        "position": "Bottom right of card",
+        "font_family": "sans-serif, Inter",
+        "font_size": "13px",
+        "font_weight": "500",
+        "color": "#6B7280 (gray-500)",
+        "font_style": "italic",
+        "padding": "8px 0 0 0"
+      }
+    },
+    "preview_card_2_interview": {
+      "position": "Second preview card in scroll area",
+      "container": {
+        "width": "100%",
+        "background_color": "#FFFFFF",
+        "border": "1px solid #E5E7EB",
+        "border_radius": "16px",
+        "padding": "24px",
+        "box_shadow": "0 4px 16px rgba(0, 0, 0, 0.06)",
+        "transition": "all 0.3s ease"
+      },
+      "header": {
+        "display": "flex",
+        "align_items": "center",
+        "justify_content": "space-between",
+        "margin_bottom": "20px",
+        "title": {
+          "text": "Ace your live interview",
+          "font_family": "sans-serif, Inter",
+          "font_size": "16px",
+          "font_weight": "600",
+          "color": "#1F2937"
+        },
+        "back_button": {
+          "text": "← Back to Dashboard",
+          "background": "#1F2937 (dark gray/black)",
+          "color": "#FFFFFF",
+          "padding": "8px 16px",
+          "border_radius": "6px",
+          "font_size": "13px",
+          "font_weight": "600",
+          "cursor": "pointer",
+          "transition": "all 0.2s ease",
+          "hover_background": "#111827"
+        }
+      },
+      "content_note": "This preview shows an interview preparation interface with work experience stories",
+      "image_placeholder_areas": [
+        {
+          "interview_details_section": {
+            "purpose": "Shows role, company, and interview details",
+            "position": "Top of content area",
+            "note": "Customize for Beyond Career branding"
+          }
+        },
+        {
+          "ai_analysis_section": {
+            "purpose": "Displays CV/job description analysis",
+            "position": "Middle content area",
+            "note": "Replace with your AI analysis content"
+          }
+        },
+        {
+          "question_response_section": {
+            "purpose": "Shows interview Q&A with feedback options",
+            "position": "Lower content area",
+            "note": "Customize interaction elements"
+          }
+        }
+      ],
+      "label": {
+        "text": "Work Experience Stories Preview",
+        "position": "Bottom center of card",
+        "font_family": "sans-serif, Inter",
+        "font_size": "13px",
+        "font_weight": "500",
+        "color": "#6B7280",
+        "font_style": "italic",
+        "text_align": "center",
+        "padding": "12px 0 0 0"
+      }
+    }
+  },
+  "floating_chat_widget": {
+    "position": "fixed",
+    "bottom": "32px",
+    "right": "32px",
+    "z_index": "1000",
+    "container": {
+      "width": "64px",
+      "height": "64px",
+      "background": "linear-gradient(135deg, #F59E0B 0%, #F97316 100%)",
+      "border_radius": "50% (perfect circle)",
+      "display": "flex",
+      "align_items": "center",
+      "justify_content": "center",
+      "box_shadow": "0 4px 16px rgba(245, 158, 11, 0.4)",
+      "cursor": "pointer",
+      "transition": "all 0.3s ease"
+    },
+    "icon_placeholder": {
+      "note": "Add your chat/message icon here",
+      "size": "32px",
+      "color": "#FFFFFF",
+      "position": "centered"
+    },
+    "hover_state": {
+      "transform": "scale(1.1)",
+      "box_shadow": "0 6px 20px rgba(245, 158, 11, 0.5)"
+    },
+    "active_state": {
+      "transform": "scale(0.95)"
+    }
+  },
+  "user_avatar_badge": {
+    "position": "fixed",
+    "bottom": "32px",
+    "left": "32px",
+    "z_index": "999",
     "container": {
       "display": "flex",
       "align_items": "center",
       "gap": "12px",
-      "flex": "0 0 auto"
+      "padding": "12px 20px",
+      "background": "#FFFFFF",
+      "border": "1px solid #E5E7EB",
+      "border_radius": "100px (pill shape)",
+      "box_shadow": "0 2px 12px rgba(0, 0, 0, 0.08)",
+      "transition": "all 0.2s ease"
     },
-    "buttons": [
-      {
-        "upgrade_pro_button": {
-          "label": "Upgrade Pro",
-          "element": "button",
-          "type": "secondary_cta",
-          "styling": {
-            "font_family": "sans-serif",
-            "font_size": "15px",
-            "font_weight": "600",
-            "color": "#7C3AED",
-            "color_description": "Purple text color",
-            "background": "linear-gradient(135deg, #FAF5FF 0%, #F3E8FF 100%)",
-            "background_description": "Very light purple gradient background",
-            "border": {
-              "width": "2px",
-              "style": "solid",
-              "color": "#C084FC",
-              "description": "Light purple border"
-            },
-            "border_radius": "10px",
-            "padding": {
-              "top": "10px",
-              "bottom": "10px",
-              "left": "20px",
-              "right": "20px"
-            },
-            "height": "44px",
-            "min_width": "130px",
-            "cursor": "pointer",
-            "transition": "all 0.3s ease",
-            "white_space": "nowrap"
-          },
-          "hover_state": {
-            "background": "linear-gradient(135deg, #F3E8FF 0%, #E9D5FF 100%)",
-            "border_color": "#A855F7",
-            "transform": "translateY(-1px)",
-            "box_shadow": "0 4px 12px rgba(124, 58, 237, 0.15)"
-          },
-          "active_state": {
-            "transform": "translateY(0)",
-            "box_shadow": "0 2px 6px rgba(124, 58, 237, 0.1)"
-          }
-        }
-      },
-      {
-        "new_interview_button": {
-          "label": "+ New Interview",
-          "element": "button",
-          "type": "primary_cta",
-          "icon": {
-            "symbol": "+",
-            "position": "left of text",
-            "spacing": "6px gap from text"
-          },
-          "styling": {
-            "font_family": "sans-serif",
-            "font_size": "15px",
-            "font_weight": "600",
-            "color": "#1F2937",
-            "color_description": "Dark gray/black text",
-            "background": "#FFFFFF",
-            "border": {
-              "width": "2px",
-              "style": "solid",
-              "color": "#1F2937",
-              "description": "Dark border matching text"
-            },
-            "border_radius": "10px",
-            "padding": {
-              "top": "10px",
-              "bottom": "10px",
-              "left": "18px",
-              "right": "18px"
-            },
-            "height": "44px",
-            "min_width": "150px",
-            "cursor": "pointer",
-            "transition": "all 0.3s ease",
-            "white_space": "nowrap",
-            "display": "flex",
-            "align_items": "center",
-            "justify_content": "center",
-            "gap": "6px"
-          },
-          "hover_state": {
-            "background": "#1F2937",
-            "color": "#FFFFFF",
-            "border_color": "#1F2937",
-            "transform": "translateY(-1px)",
-            "box_shadow": "0 4px 12px rgba(0, 0, 0, 0.15)"
-          },
-          "active_state": {
-            "transform": "translateY(0)",
-            "box_shadow": "0 2px 6px rgba(0, 0, 0, 0.1)"
-          }
-        }
-      },
-      {
-        "user_avatar_button": {
-          "element": "button",
-          "type": "user_profile_avatar",
-          "styling": {
-            "width": "44px",
-            "height": "44px",
-            "border_radius": "50%",
-            "border_radius_description": "Perfect circle",
-            "background": "linear-gradient(135deg, #14B8A6 0%, #3B82F6 50%, #8B5CF6 100%)",
-            "background_description": "Teal to blue to purple gradient",
-            "border": {
-              "width": "2px",
-              "style": "solid",
-              "color": "#FFFFFF"
-            },
-            "display": "flex",
-            "align_items": "center",
-            "justify_content": "center",
-            "cursor": "pointer",
-            "transition": "all 0.3s ease",
-            "overflow": "hidden"
-          },
-          "content": {
-            "type": "initials",
-            "text": "JD",
-            "font_family": "sans-serif",
-            "font_size": "15px",
-            "font_weight": "700",
-            "color": "#FFFFFF",
-            "text_align": "center"
-          },
-          "dropdown_indicator": {
-            "icon": "chevron-down arrow",
-            "position": "Not visible in main avatar, separate element",
-            "note": "Dropdown arrow shown separately if needed"
-          },
-          "hover_state": {
-            "transform": "scale(1.05)",
-            "box_shadow": "0 4px 12px rgba(0, 0, 0, 0.15)"
-          },
-          "note": "Can be replaced with actual profile image if available"
-        }
-      },
-      {
-        "dropdown_arrow": {
-          "element": "button",
-          "type": "dropdown_trigger",
-          "position": "immediately after avatar",
-          "visibility": "optional",
-          "styling": {
-            "width": "24px",
-            "height": "24px",
-            "background": "transparent",
-            "border": "none",
-            "cursor": "pointer",
-            "padding": "0",
-            "display": "none",
-            "note": "If dropdown shown in image, include chevron-down icon"
-          }
-        }
-      }
-    ],
-    "spacing": {
-      "gap_between_elements": "12px",
-      "note": "Consistent 12px gap between Upgrade Pro, New Interview, and Avatar"
+    "avatar_placeholder": {
+      "note": "Add your user avatar or initials here",
+      "width": "40px",
+      "height": "40px",
+      "border_radius": "50%",
+      "background": "linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%)",
+      "display": "flex",
+      "align_items": "center",
+      "justify_content": "center",
+      "font_family": "sans-serif, Inter",
+      "font_size": "16px",
+      "font_weight": "700 (bold)",
+      "color": "#FFFFFF"
+    },
+    "text_content": {
+      "note": "Optional text next to avatar",
+      "font_size": "14px",
+      "color": "#1F2937",
+      "font_weight": "500"
+    },
+    "hover_state": {
+      "box_shadow": "0 4px 16px rgba(0, 0, 0, 0.12)",
+      "cursor": "pointer"
     }
   },
   "responsive_behavior": {
+    "desktop_large": {
+      "breakpoint": "1440px and above",
+      "left_section_width": "60%",
+      "right_section_width": "40%",
+      "form_padding": "80px 60px",
+      "preview_padding": "40px 32px"
+    },
     "desktop": {
-      "breakpoint": "1024px and above",
-      "layout": "All elements visible as described"
+      "breakpoint": "1024px to 1439px",
+      "left_section_width": "58%",
+      "right_section_width": "42%",
+      "form_padding": "60px 40px",
+      "preview_padding": "32px 24px"
     },
     "tablet": {
       "breakpoint": "768px to 1023px",
-      "adjustments": {
-        "search_bar_max_width": "350px",
-        "navigation_tabs_font_size": "15px",
-        "button_padding_reduction": "Reduce horizontal padding by 20%"
-      }
+      "layout": "Stack vertically - form on top, preview below",
+      "left_section_width": "100%",
+      "right_section_width": "100%",
+      "form_padding": "40px 32px",
+      "preview_padding": "32px 24px",
+      "preview_sticky": "Remove sticky positioning"
     },
     "mobile": {
       "breakpoint": "Below 768px",
-      "adjustments": {
-        "layout": "Consider hamburger menu for navigation",
-        "search_bar": "Collapse to search icon only",
-        "upgrade_button": "Show icon or hide",
-        "priority": "Show only essential elements: logo, search icon, new interview, avatar"
+      "layout": "Single column, hide preview or collapse",
+      "form_padding": "24px 16px",
+      "name_fields_grid": "Stack vertically (1 column)",
+      "button_width": "100% (full width)",
+      "floating_widgets": "Reduce size or reposition"
+    }
+  },
+  "form_validation_logic": {
+    "validation_trigger": "On blur and on submit",
+    "required_fields": ["First Name", "Last Name", "Role"],
+    "validation_rules": {
+      "first_name": {
+        "required": true,
+        "min_length": 1,
+        "error_message": "First name is required"
+      },
+      "last_name": {
+        "required": true,
+        "min_length": 1,
+        "error_message": "Last name is required"
+      },
+      "role": {
+        "required": true,
+        "min_selections": 1,
+        "max_selections": 3,
+        "error_message": "Please select at least one role"
+      },
+      "promo_code": {
+        "required": false,
+        "format": "alphanumeric"
       }
+    },
+    "submit_validation": {
+      "prevent_submit_if_invalid": true,
+      "show_all_errors_on_submit": true,
+      "focus_first_error": true
     }
   },
   "accessibility": {
-    "semantic_html": "Use <header>, <nav>, <button> tags appropriately",
+    "semantic_html": "Use proper form elements with labels",
     "aria_labels": {
-      "search_input": "aria-label='Search interviews'",
-      "navigation_tabs": "aria-current='page' for active tab",
-      "buttons": "aria-label descriptive text for each button",
-      "user_avatar": "aria-label='User profile menu'"
+      "form": "aria-label='Personalization form'",
+      "required_fields": "aria-required='true'",
+      "error_messages": "aria-describedby for error message association"
     },
     "keyboard_navigation": {
-      "tab_order": "Left to right: tabs → search → upgrade → new interview → avatar",
-      "focus_visible": "Add visible focus outline for keyboard users",
-      "focus_outline": "2px solid #6366F1 with 2px offset"
+      "tab_order": "Logical top-to-bottom flow",
+      "focus_visible": "Clear focus indicators on all inputs",
+      "enter_to_submit": "Submit form on Enter key in last field"
     },
-    "screen_reader": "Ensure all interactive elements have descriptive labels"
+    "screen_reader": {
+      "error_announcements": "Use aria-live regions for validation errors",
+      "progress_indicator": "Announce progress updates"
+    },
+    "color_contrast": "All text meets WCAG AA standards (4.5:1 minimum)"
   },
-  "interaction_states": {
-    "note": "Frontend only - no actual navigation/redirects",
-    "tab_click": {
-      "behavior": "Change active state visually only",
-      "visual_feedback": "Apply active styles (underline, color change)",
-      "no_navigation": "Do not redirect or change URL"
+  "animation_and_transitions": {
+    "page_load": "Fade in animation for form and preview cards",
+    "input_focus": "Smooth border color and shadow transition (0.2s)",
+    "button_hover": "Transform and shadow animation (0.2s)",
+    "error_display": "Slide down animation for error messages",
+    "progress_bar": "Width transition animation (0.3s ease)"
+  },
+  "color_system": {
+    "primary_brand": "#F59E0B (amber/yellow)",
+    "primary_dark": "#D97706 (darker amber)",
+    "background_cream": "#FEF3C7 (light amber/cream)",
+    "success": "#10B981 (green-500)",
+    "error": "#EF4444 (red-500)",
+    "text_primary": "#1F2937 (gray-800)",
+    "text_secondary": "#6B7280 (gray-500)",
+    "text_placeholder": "#9CA3AF (gray-400)",
+    "border_default": "#D1D5DB (gray-300)",
+    "border_light": "#E5E7EB (gray-200)",
+    "background_white": "#FFFFFF",
+    "shadow_light": "rgba(0, 0, 0, 0.06)",
+    "shadow_medium": "rgba(0, 0, 0, 0.1)"
+  },
+  "typography_system": {
+    "font_family": "system-ui, -apple-system, 'Segoe UI', Inter, Roboto, sans-serif",
+    "font_sizes": {
+      "heading_large": "36px",
+      "heading_medium": "24px",
+      "heading_small": "16px",
+      "body_large": "15px",
+      "body_regular": "14px",
+      "body_small": "13px",
+      "caption": "12px"
     },
-    "button_click": {
-      "behavior": "Visual feedback only (hover, active states)",
-      "no_action": "No backend integration, no actual functionality"
+    "font_weights": {
+      "regular": "400",
+      "medium": "500",
+      "semibold": "600",
+      "bold": "700"
     },
-    "search_input": {
-      "behavior": "Allow typing, no search functionality",
-      "placeholder_interaction": "Disappears on focus"
+    "line_heights": {
+      "tight": "1.2",
+      "normal": "1.4",
+      "relaxed": "1.6",
+      "loose": "1.7"
+    },
+    "letter_spacing": {
+      "tight": "-0.02em",
+      "normal": "0em",
+      "wide": "0.02em"
     }
   },
-  "scrolling_behavior": {
-    "type": "scrollable_with_page",
-    "position": "relative (not fixed or sticky)",
-    "description": "Header scrolls away when user scrolls down the page",
-    "implementation": "Do not use position: fixed or position: sticky",
-    "z_index": "100 (for stacking context but not fixed positioning)"
-  },
-  "implementation_guidelines": {
-    "html_structure": "header > nav container > left section (tabs) + center section (search) + right section (buttons + avatar)",
-    "css_framework_suggestions": ["Tailwind CSS", "CSS Modules", "Styled Components", "vanilla CSS"],
-    "flexbox_usage": "Primary layout method for alignment and spacing",
-    "grid_alternative": "Can use CSS Grid with three columns: auto 1fr auto",
-    "measurement_units": {
-      "use_pixels_for": "Font sizes, borders, specific dimensions",
-      "use_rem_for": "Scalable spacing and responsive typography",
-      "use_percentages_for": "Width of search bar and flexible elements"
+  "spacing_system": {
+    "scale": "4px base unit (4, 8, 12, 16, 20, 24, 32, 40, 48, 60, 80)",
+    "component_gaps": {
+      "form_fields": "32px",
+      "name_fields": "24px",
+      "label_to_input": "8px",
+      "error_to_input": "6px",
+      "preview_cards": "24px"
+    },
+    "container_padding": {
+      "form_area": "60-80px",
+      "preview_area": "32-40px",
+      "cards": "24px",
+      "buttons": "14px 32px"
     }
   },
-  "color_palette_reference": {
-    "primary_purple": "#6366F1",
-    "light_purple": "#C084FC",
-    "very_light_purple": "#F3E8FF",
-    "dark_text": "#1F2937",
-    "medium_gray": "#6B7280",
-    "light_gray": "#9CA3AF",
-    "border_gray": "#E5E7EB",
-    "white": "#FFFFFF",
-    "gradient_teal": "#14B8A6",
-    "gradient_blue": "#3B82F6",
-    "gradient_purple": "#8B5CF6"
+  "implementation_notes": {
+    "framework_compatibility": ["React", "Next.js", "Vue.js", "Angular"],
+    "styling_approach": ["Tailwind CSS", "CSS Modules", "Styled Components", "Plain CSS"],
+    "form_library_suggestions": ["React Hook Form", "Formik", "Vue Formulate", "Angular Forms"],
+    "validation_library": ["Yup", "Zod", "Joi", "Custom validation"],
+    "state_management": "Use form state for validation errors and field values",
+    "logo_implementation": "Import logo from /public folder: import logo from '/public/beyond-career-logo.png'",
+    "image_handling": "All image areas are placeholders - add your own images with same positioning and alignment",
+    "branding_customization": "Replace all 'InterviewBee' references with 'Beyond Career' throughout the component"
   },
-  "design_principles": {
-    "consistency": "Maintain 12px gap between right section elements",
-    "alignment": "All elements vertically centered within 72px header height",
-    "visual_hierarchy": "Active tab stands out with color and underline",
-    "whitespace": "Adequate padding prevents cramped appearance",
-    "contrast": "WCAG AA compliant color contrast ratios",
-    "feedback": "All interactive elements have clear hover and active states"
-  },
-  "frontend_only_notes": {
-    "no_routing": "Do not implement React Router, Next.js routing, or URL changes",
-    "no_api_calls": "No fetch requests, no backend integration",
-    "state_management": "Simple useState for active tab tracking if using React",
-    "mock_interactions": "Buttons and tabs only change visual state",
-    "search_functionality": "Input accepts text but performs no search operation"
+  "technical_specifications": {
+    "html_structure": "Semantic HTML5 with proper form elements and ARIA attributes",
+    "css_approach": "Mobile-first responsive design with flexbox and grid",
+    "javascript_requirements": "Form validation, state management, conditional rendering",
+    "performance": "Lazy load preview images, optimize animations, minimize reflows",
+    "browser_support": "Modern browsers (Chrome, Firefox, Safari, Edge - last 2 versions)"
   }
 }
