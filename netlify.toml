@@ -1,0 +1,8 @@
+[build]
+# Point Netlify at the Next.js app inside the repo
+base = "ai-mock"
+command = "npm run build"
+
+# Use Netlify's official Next.js plugin for correct SSR/ISR handling
+[[plugins]]
+package = "@netlify/plugin-nextjs"
