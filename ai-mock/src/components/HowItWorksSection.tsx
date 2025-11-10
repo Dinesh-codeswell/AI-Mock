@@ -5,24 +5,28 @@ export default function HowItWorksSection() {
     {
       number: "1",
       title: "Set Up Your Interview",
+      imageSrc: "/setup.webp",
       body:
         "Select from different interview formats and let our AI interview coach customize the questions for your target role.",
     },
     {
       number: "2",
       title: "Practice Naturally",
+      imageSrc: "/naturally.webp",
       body:
         "Have realistic conversations with our AI interviewer in a pressure-free environment at your own pace.",
     },
     {
       number: "3",
       title: "Get Instant Feedback",
+      imageSrc: "/Feedback.webp",
       body:
         "Receive detailed performance insights and actionable recommendations after each practice session.",
     },
     {
       number: "4",
       title: "Build Confidence",
+      imageSrc: "/confidence.webp",
       body:
         "Review your recorded sessions, track your improvement, and prepare effectively for real interviews.",
     },
@@ -49,15 +53,16 @@ export default function HowItWorksSection() {
                 {c.number}
               </div>
 
-              {/* visual mock container */}
+              {/* visual image container */}
               <div className="p-5">
-                <div className="w-full h-40 rounded-xl border border-[#E5E7EB] bg-gradient-to-br from-gray-100 to-gray-200 shadow-inner flex items-center justify-center">
+                <div className="relative w-full h-40 rounded-xl border border-[#E5E7EB] overflow-hidden shadow-inner">
                   <Image
-                    src="/window.svg"
-                    alt="Section visual"
-                    width={120}
-                    height={120}
-                    className="opacity-70"
+                    src={c.imageSrc}
+                    alt={c.title}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    style={{ objectFit: "cover" }}
+                    priority={false}
                   />
                 </div>
               </div>
