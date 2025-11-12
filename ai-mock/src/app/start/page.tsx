@@ -164,33 +164,27 @@ export default function StartPage() {
             </div>
           </section>
 
-          {/* Right: Preview area (40%) */}
-          <aside style={{ flex: "1 1 40%", maxWidth: "40%", backgroundColor: "#FEF3C7", padding: "24px 20px", display: "flex", flexDirection: "column", gap: 24, overflow: "hidden", height: "100vh", position: "sticky", top: 0 }}>
-            {/* Preview card 1 */}
-            <div style={{ width: "100%", backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: 14, padding: 14, boxShadow: "0 4px 16px rgba(0,0,0,0.06)" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
-                <div style={{ display: "flex", gap: 6 }}>
-                  <span style={{ width: 16, height: 16, background: "#F59E0B", borderRadius: 4 }} />
-                  <span style={{ width: 16, height: 16, background: "#10B981", borderRadius: 4 }} />
-                  <span style={{ width: 16, height: 16, background: "#3B82F6", borderRadius: 4 }} />
-                </div>
-                <div style={{ fontFamily: "Inter", fontSize: 15, fontWeight: 600, color: "#1F2937" }}>Your path to interview success</div>
-              </div>
-              <div style={{ padding: 6, background: "#FFFFFF" }}>
-                <Image src="/window.svg" alt="Main Dashboard Interface" width={340} height={102} className="w-full h-auto" />
-              </div>
-              <div style={{ textAlign: "right", fontFamily: "Inter", fontSize: 12, fontWeight: 500, color: "#6B7280", fontStyle: "italic", paddingTop: 4 }}>Main Dashboard Interface</div>
+          {/* Right: Preview area (40%) full-bleed images only */}
+          <aside style={{ flex: "1 1 40%", maxWidth: "40%", backgroundColor: "#FEF3C7", padding: "24px 20px", display: "flex", flexDirection: "column", gap: 12, overflow: "hidden", height: "100vh", position: "sticky", top: 0 }}>
+            <div style={{ position: "relative", flex: 1, width: "100%", borderRadius: 12, overflow: "hidden" }}>
+              <Image
+                src="/naturally.webp"
+                alt=""
+                fill
+                sizes="(max-width: 768px) 90vw, 40vw"
+                style={{ objectFit: "cover" }}
+                priority
+              />
             </div>
-
-            {/* Preview card 2 */}
-            <div style={{ width: "100%", backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: 14, padding: 14, boxShadow: "0 4px 16px rgba(0,0,0,0.06)" }}>
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start", marginBottom: 12 }}>
-                <div style={{ fontFamily: "Inter", fontSize: 15, fontWeight: 600, color: "#1F2937" }}>Ace your live interview</div>
-              </div>
-              <div style={{ padding: 6, background: "#FFFFFF" }}>
-                <Image src="/window.svg" alt="Work Experience Stories Preview" width={340} height={96} className="w-full h-auto" />
-              </div>
-              <div style={{ textAlign: "center", fontFamily: "Inter", fontSize: 12, fontWeight: 500, color: "#6B7280", fontStyle: "italic", paddingTop: 6 }}>Work Experience Stories Preview</div>
+            <div style={{ position: "relative", flex: 1, width: "100%", borderRadius: 12, overflow: "hidden" }}>
+              <Image
+                src="/confidence.webp"
+                alt=""
+                fill
+                sizes="(max-width: 768px) 90vw, 40vw"
+                style={{ objectFit: "cover" }}
+                priority
+              />
             </div>
           </aside>
         </div>
@@ -213,7 +207,7 @@ export default function StartPage() {
             </div>
             {/* Header and sub */}
             <h2 style={{ marginTop: 24, marginBottom: 8, fontFamily: "Inter, -apple-system", fontSize: 24, fontWeight: 700, color: "#111827", lineHeight: 1.25 }}>
-              InterviewBee works smarter with your CV and LinkedIn
+              Beyond Career works smarter with your CV and LinkedIn
             </h2>
             <p style={{ fontFamily: "Inter", fontSize: 14, color: "#374151", marginBottom: 16, maxWidth: 760 }}>
               We use your CV and LinkedIn profile to personalize AI assistance — whether you're practicing or in a real interview.
@@ -244,31 +238,27 @@ export default function StartPage() {
             </div>
           </section>
 
-          {/* Right: Step 2 previews */}
-          <aside style={{ flex: "1 1 40%", maxWidth: "40%", backgroundColor: "#FEF3C7", padding: "24px 20px", display: "flex", flexDirection: "column", gap: 24, overflow: "hidden", height: "100vh" }}>
-            <div style={{ width: "100%", backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: 14, padding: 14, boxShadow: "0 4px 16px rgba(0,0,0,0.06)" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
-                <div style={{ display: "flex", gap: 6 }}>
-                  <span style={{ width: 16, height: 16, background: "#F59E0B", borderRadius: 4 }} />
-                  <span style={{ width: 16, height: 16, background: "#10B981", borderRadius: 4 }} />
-                  <span style={{ width: 16, height: 16, background: "#3B82F6", borderRadius: 4 }} />
-                </div>
-                <div style={{ fontFamily: "Inter", fontSize: 15, fontWeight: 600, color: "#1F2937" }}>Docked Window Interface on Interview Tab</div>
-              </div>
-              <div style={{ padding: 6 }}>
-                <Image src="/window.svg" alt="Docked Window" width={340} height={102} className="w-full h-auto" />
-              </div>
-              <div style={{ textAlign: "right", fontFamily: "Inter", fontSize: 12, fontWeight: 500, color: "#6B7280", fontStyle: "italic", paddingTop: 4 }}>Interview Tab Preview</div>
+          {/* Right: Step 2 previews (full-bleed images, same as step 1) */}
+          <aside style={{ flex: "1 1 40%", maxWidth: "40%", backgroundColor: "#FEF3C7", padding: "24px 20px", display: "flex", flexDirection: "column", gap: 12, overflow: "hidden", height: "100vh" }}>
+            <div style={{ position: "relative", flex: 1, width: "100%", borderRadius: 12, overflow: "hidden" }}>
+              <Image
+                src="/naturally.webp"
+                alt=""
+                fill
+                sizes="(max-width: 768px) 90vw, 40vw"
+                style={{ objectFit: "cover" }}
+                priority
+              />
             </div>
-
-            <div style={{ width: "100%", backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: 14, padding: 14, boxShadow: "0 4px 16px rgba(0,0,0,0.06)" }}>
-              <div style={{ display: "flex", alignItems: "center", marginBottom: 12 }}>
-                <div style={{ fontFamily: "Inter", fontSize: 15, fontWeight: 600, color: "#1F2937" }}>Interview Performance Report Screen</div>
-              </div>
-              <div style={{ padding: 6 }}>
-                <Image src="/window.svg" alt="Interview Performance Report" width={340} height={96} className="w-full h-auto" />
-              </div>
-              <div style={{ textAlign: "center", fontFamily: "Inter", fontSize: 12, fontWeight: 500, color: "#6B7280", fontStyle: "italic", paddingTop: 6 }}>Report Screen Preview</div>
+            <div style={{ position: "relative", flex: 1, width: "100%", borderRadius: 12, overflow: "hidden" }}>
+              <Image
+                src="/confidence.webp"
+                alt=""
+                fill
+                sizes="(max-width: 768px) 90vw, 40vw"
+                style={{ objectFit: "cover" }}
+                priority
+              />
             </div>
           </aside>
         </div>
