@@ -1,0 +1,163 @@
+5:51:03 AM: Waiting for other deploys from your team to complete. Check the queue: https://app.netlify.com/teams/dinesh-codeswell/builds
+5:52:15 AM: build-image version: 0885bcbb999ebd19472160b218ceb07f99c4e7d1 (noble)
+5:52:15 AM: buildbot version: 8b13078fd9f0190e553de48ef6193e2b78d027c7
+5:52:16 AM: Fetching cached dependencies
+5:52:16 AM: Failed to fetch cache, continuing with build
+5:52:16 AM: Starting to prepare the repo for build
+5:52:16 AM: No cached dependencies found. Cloning fresh repo
+5:52:16 AM: git clone --filter=blob:none https://github.com/Dinesh-codeswell/AI-Mock
+5:52:16 AM: Preparing Git Reference refs/heads/main
+5:52:17 AM: Custom build path detected. Proceeding with the specified path: 'ai-mock'
+5:52:17 AM: Custom publish path detected. Proceeding with the specified path: 'ai-mock/.next'
+5:52:18 AM: Starting to install dependencies
+5:52:19 AM: Downloading and installing node v20.19.5...
+5:52:19 AM: Downloading https://nodejs.org/dist/v20.19.5/node-v20.19.5-linux-x64.tar.xz...
+5:52:20 AM: Computing checksum with sha256sum
+5:52:20 AM: Checksums matched!
+5:52:22 AM: Now using node v20.19.5 (npm v10.8.2)
+5:52:22 AM: Enabling Node.js Corepack
+5:52:22 AM: Started restoring cached build plugins
+5:52:22 AM: Finished restoring cached build plugins
+5:52:22 AM: Started restoring cached corepack dependencies
+5:52:22 AM: Finished restoring cached corepack dependencies
+5:52:22 AM: No npm workspaces detected
+5:52:22 AM: Started restoring cached node modules
+5:52:22 AM: Finished restoring cached node modules
+5:52:23 AM: Installing npm packages using npm version 10.8.2
+5:52:32 AM: added 367 packages in 10s
+5:52:33 AM: npm packages installed
+5:52:33 AM: Successfully installed dependencies
+5:52:33 AM: Starting build script
+5:52:34 AM: Detected 1 framework(s)
+5:52:34 AM: "next" at version "16.0.1"
+5:52:34 AM: Section completed: initializing
+5:52:35 AM: ​
+5:52:35 AM: Netlify Build                                                 
+5:52:35 AM: ────────────────────────────────────────────────────────────────
+5:52:35 AM: ​
+5:52:35 AM: ❯ Version
+5:52:35 AM:   @netlify/build 35.3.3
+5:52:35 AM: ​
+5:52:35 AM: ❯ Flags
+5:52:35 AM:   accountId: 682944c53ccbcbdd9854f222
+5:52:35 AM:   baseRelDir: true
+5:52:35 AM:   buildId: 690d3b6f5521e1000804fb2e
+5:52:35 AM:   deployId: 690d3b6f5521e1000804fb30
+5:52:35 AM: ​
+5:52:35 AM: ❯ Current directory
+5:52:35 AM:   /opt/build/repo/ai-mock
+5:52:35 AM: ​
+5:52:35 AM: ❯ Config file
+5:52:35 AM:   /opt/build/repo/netlify.toml
+5:52:35 AM: ​
+5:52:35 AM: ❯ Context
+5:52:35 AM:   production
+5:52:36 AM: ​
+5:52:36 AM: ❯ Installing extensions
+5:52:36 AM:    - neon
+5:52:52 AM: ​
+5:52:52 AM: ❯ Using Next.js Runtime - v5.14.5
+5:52:52 AM: ​
+5:52:52 AM: ❯ Loading extensions
+5:52:52 AM:    - neon
+5:52:54 AM: No Next.js cache to restore
+5:52:54 AM: ​
+5:52:54 AM: build.command from netlify.toml                               
+5:52:54 AM: ────────────────────────────────────────────────────────────────
+5:52:54 AM: ​
+5:52:54 AM: $ npm run build
+5:52:54 AM: > ai-mock@0.1.0 build
+5:52:54 AM: > next build
+5:52:55 AM: ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+5:52:55 AM:    ▲ Next.js 16.0.1 (Turbopack)
+5:52:55 AM:    Creating an optimized production build ...
+5:53:01 AM:  ✓ Compiled successfully in 5.9s
+5:53:01 AM:    Running TypeScript ...
+5:53:04 AM:    Collecting page data ...
+5:53:05 AM:    Generating static pages (0/6) ...
+5:53:05 AM:    Generating static pages (1/6)
+5:53:05 AM:    Generating static pages (2/6)
+5:53:05 AM:    Generating static pages (4/6)
+5:53:05 AM:  ✓ Generating static pages (6/6) in 673.6ms
+5:53:05 AM:    Finalizing page optimization ...
+5:53:06 AM: Route (app)
+5:53:06 AM: ┌ ○ /
+5:53:06 AM: ├ ○ /_not-found
+5:53:06 AM: ├ ƒ /api/start-practice
+5:53:06 AM: └ ○ /start
+5:53:06 AM: ○  (Static)   prerendered as static content
+5:53:06 AM: ƒ  (Dynamic)  server-rendered on demand
+5:53:06 AM: ​
+5:53:06 AM: (build.command completed in 11.9s)
+5:53:06 AM: Next.js cache saved
+5:53:06 AM: Next.js cache saved
+5:53:06 AM: ​
+5:53:06 AM: Functions bundling                                            
+5:53:06 AM: ────────────────────────────────────────────────────────────────
+5:53:06 AM: ​
+5:53:06 AM: Packaging Functions from .netlify/functions-internal directory:
+5:53:06 AM:  - ___netlify-server-handler/___netlify-server-handler.mjs
+5:53:06 AM: ​
+5:53:32 AM: Failed during stage 'building site': Build script returned non-zero exit code: 4 (https://ntl.fyi/exit-code-4)
+5:53:10 AM: ​
+5:53:10 AM: (Functions bundling completed in 3.4s)
+5:53:20 AM: ​
+5:53:20 AM: Uploading blobs to deploy store                               
+5:53:20 AM: ────────────────────────────────────────────────────────────────
+5:53:20 AM: ​
+5:53:20 AM: Error uploading blobs to deploy store: fetch failed
+5:53:30 AM: ​
+5:53:30 AM: Internal error during "Uploading blobs"                       
+5:53:30 AM: ────────────────────────────────────────────────────────────────
+5:53:30 AM: ​
+5:53:30 AM:   Error message
+5:53:30 AM:   Error: Failed while uploading blobs to deploy store
+5:53:30 AM: ​
+5:53:30 AM:   Error location
+5:53:30 AM:   During Uploading blobs
+5:53:30 AM:       at coreStep (file:///opt/buildhome/node-deps/node_modules/@netlify/build/lib/plugins_core/blobs_upload/index.js:48:15)
+5:53:30 AM:       at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+5:53:30 AM:       at async fireCoreStep (file:///opt/buildhome/node-deps/node_modules/@netlify/build/lib/steps/core_step.js:11:98)
+5:53:30 AM:       at async tFireStep (file:///opt/buildhome/node-deps/node_modules/@netlify/build/lib/time/main.js:19:63)
+5:53:30 AM:       at async file:///opt/buildhome/node-deps/node_modules/@netlify/build/lib/steps/run_step.js:65:296
+5:53:30 AM:       at async pReduce.index (file:///opt/buildhome/node-deps/node_modules/@netlify/build/lib/steps/run_steps.js:12:362)
+5:53:30 AM:       at async Promise.all (index 0)
+5:53:30 AM:       at async next (file:///opt/buildhome/node-deps/node_modules/p-reduce/index.js:15:44)
+5:53:30 AM: ​
+5:53:30 AM:   Resolved config
+5:53:30 AM:   build:
+5:53:30 AM:     base: /opt/build/repo/ai-mock
+5:53:30 AM:     command: npm run build
+5:53:30 AM:     commandOrigin: config
+5:53:30 AM:     environment:
+5:53:30 AM:       - NODE_VERSION
+5:53:30 AM:     publish: /opt/build/repo/ai-mock/.next
+5:53:30 AM:     publishOrigin: config
+5:53:30 AM:   headers:
+5:53:32 AM:     - for: /_next/static/*
+      values:
+        Cache-Control: public, max-age=31536000, immutable
+  headersOrigin: inline
+  plugins:
+    - inputs: {}
+      origin: config
+      package: "@netlify/plugin-nextjs"
+  redirects:
+    - from: /_next/image
+      query:
+        q: :quality
+        url: :url
+        w: :width
+      status: 200
+      to: /.netlify/images?url=:url&w=:width&q=:quality
+    - from: /_ipx/*
+      query:
+        q: :quality
+        url: :url
+        w: :width
+      status: 200
+      to: /.netlify/images?url=:url&w=:width&q=:quality
+  redirectsOrigin: inline
+5:53:32 AM: Build failed due to an internal system error: Build script returned non-zero exit code: 4
+5:53:32 AM: Failing build: Failed to build site
+5:53:33 AM: Finished processing build request in 1m17.088s

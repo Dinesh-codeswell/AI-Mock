@@ -35,10 +35,7 @@ export default function HowItWorksSection() {
   return (
     <section id="interview-process" aria-label="Master the interview process" className="bg-white">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-8 py-10 lg:py-14">
-        <h2
-          className="text-center font-bold tracking-tight"
-          style={{ fontFamily: "Georgia, 'Times New Roman', serif", color: "#2D2D2D", fontSize: 36, letterSpacing: "-0.02em" }}
-        >
+        <h2 className="text-center text-2xl md:text-3xl font-bold tracking-tight text-[#081F5C]">
           Master the Interview Process
         </h2>
 
@@ -69,18 +66,8 @@ export default function HowItWorksSection() {
 
               {/* text */}
               <div className="px-6 pb-6 text-center">
-                <h3
-                  className="font-bold mb-2"
-                  style={{ fontFamily: "Georgia, 'Times New Roman', serif", color: "#2D2D2D", fontSize: 20 }}
-                >
-                  {c.title}
-                </h3>
-                <p
-                  className="leading-relaxed"
-                  style={{ fontFamily: "Arial, Helvetica, sans-serif", color: "#5A5A5A", fontSize: 15 }}
-                >
-                  {c.body}
-                </p>
+                <h3 className="font-semibold text-[#081F5C] text-lg mb-2">{c.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{c.body}</p>
               </div>
             </article>
           ))}

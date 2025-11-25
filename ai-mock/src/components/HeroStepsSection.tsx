@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 
 /**
  * Hero section with steps implemented per /C:/Users/Acer/Desktop/AI Mock/news.json
@@ -9,6 +10,7 @@ import React, { useState } from "react";
 export default function HeroStepsSection() {
   const [starting, setStarting] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
+  const router = useRouter();
 
   const steps = [
     {
@@ -44,14 +46,35 @@ export default function HeroStepsSection() {
   ];
 
   async function handleStartPractice() {
-    // Redirect all practice CTAs to the unified `/start` page
+    // Send signed-in users directly to start page; otherwise login with intent
+    const startPath = '/ai-interview/start';
     try {
       setStarting(true);
       setStatus(null);
-      window.location.href = "/start";
-    } finally {
-      setStarting(false);
+      const res = await fetch('/api/auth/session', { cache: 'no-store' });
+      const data = await res.json();
+      if (data?.hasSession) {
+        router.push(startPath);
+        return;
+      }
+    } catch (_) {
+      // proceed to unauthenticated flow
     }
+
+    try {
+      if (typeof window !== 'undefined') {
+        sessionStorage.setItem('redirectAfterSignup', startPath);
+      }
+      await fetch('/auth/set-intent', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ intent: startPath })
+      });
+    } catch (_) {
+      // Non-blocking
+    }
+    router.push(`/login?redirectTo=${encodeURIComponent(startPath)}`);
+    setStarting(false);
   }
 
   return (
